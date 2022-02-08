@@ -66,8 +66,10 @@
                         <h2>20 év tapasztalat</h2>
                     </div>
                     <div class="about-content mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste. Lorem Ipsum available.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id
+                            est laborum. Sed ut perspiciatis unde omnis iste.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id
+                            est laborum. Sed ut perspiciatis unde omnis iste. Lorem Ipsum available.</p>
                         <img src="img/core-img/signature.png" alt="">
                     </div>
                 </div>
@@ -77,7 +79,8 @@
     <!-- About Us Area End -->
 
     <!-- Video Area Start -->
-    <div class="roberto--video--area bg-img bg-overlay jarallax section-padding-0-100" style="background-image: url(img/bg-img/20.jpg);">
+    <div class="roberto--video--area bg-img bg-overlay jarallax section-padding-0-100"
+        style="background-image: url(img/bg-img/20.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-12 col-md-6">
@@ -87,7 +90,8 @@
                         <h2>Our Hotel &amp; Room</h2>
                     </div>
                     <div class="video-content-area mt-100 wow fadeInUp" data-wow-delay="500ms">
-                        <a href="https://www.youtube.com/watch?v=2up_Eq6r6Ko" class="video-play-btn"><i class="fa fa-play"></i></a>
+                        <a href="https://www.youtube.com/watch?v=2up_Eq6r6Ko" class="video-play-btn"><i
+                                class="fa fa-play"></i></a>
                     </div>
                 </div>
             </div>
@@ -141,7 +145,7 @@
     </section>
     <!-- Service Area End -->
     <!-- Footer Start-->
-    <?php
+        <?php
         include "footer.php";
         ?>
     <!-- Footer End-->

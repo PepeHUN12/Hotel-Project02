@@ -6,7 +6,7 @@
                     <div class="col-12 col-md-7">
                         <div class="cta-text mb-50">
                             <h2>Vegye fel a kapcsolatot!</h2>
-                            <h6>Tel: (+30) 30-789-1230 Foglaljon személyesen vagy telefonon</h6>
+                            <h6>Tel: (+36) 30-789-1230 Foglaljon személyesen vagy telefonon</h6>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 text-right">

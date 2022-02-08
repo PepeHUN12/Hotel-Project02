@@ -73,7 +73,6 @@
                                             <li><a href="./single-room.php">- Egyes szobák</a></li>
                                             <li><a href="./about.php">- Rólunk</a></li>
                                             <li><a href="./blog.php">- Blog</a></li>
-                                            <li><a href="./single-blog.php">- Single Blog</a></li>
                                             <li><a href="./contact.php">- Kapcsolat</a></li>
                                             <li><a href="#">- Dropdown</a>
                                                 <ul class="dropdown">

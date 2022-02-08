@@ -11,7 +11,7 @@
     <title>Schola - Hotel | blog</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
+    < <link rel="icon" href="./img/core-img/schola.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
