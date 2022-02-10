@@ -1,0 +1,20 @@
+CREATE TABLE rooms (
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Name varchar(255),
+    Price int,
+    Size int,
+    Bed varchar(255),
+    Adult int,
+    Child int,
+    Services varchar(255),
+    Availability int);
+
+INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1);
+
+INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', 1);
+
+INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Prémium szoba', 450, 45, 'Francia ágy', 2, 2, 'Wifi,TV', 1);
+
+INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1);
+
+INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1);
