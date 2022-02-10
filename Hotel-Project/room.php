@@ -214,7 +214,7 @@
                             </div>
                             <div class="form-group mb-50">
                                 <div class="slider-range">
-                                    <div class="range-price">Max Price: $0 - $3000</div>
+                                    <div class="range-price">Max ár: $0 - $400</div>
                                     <div data-min="0" data-max="3000" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="3000" data-label-result="Max Price: ">
                                         <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
