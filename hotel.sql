@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 10. 13:20
+-- Létrehozás ideje: 2022. Feb 15. 11:23
 -- Kiszolgáló verziója: 10.4.22-MariaDB
 -- PHP verzió: 8.1.1
 
@@ -36,47 +36,47 @@ CREATE TABLE `rooms` (
   `Adult` int(11) DEFAULT NULL,
   `Child` int(11) DEFAULT NULL,
   `Services` varchar(255) DEFAULT NULL,
-  `Availability` int(11) DEFAULT NULL
+  `ReservationID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- A tábla adatainak kiíratása `rooms`
 --
 
-INSERT INTO `rooms` (`ID`, `Name`, `Price`, `Size`, `Bed`, `Adult`, `Child`, `Services`, `Availability`) VALUES
-(1, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(2, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(3, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(4, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(5, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(6, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(7, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(8, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(9, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(10, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', 1),
-(11, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', 1),
-(12, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', 1),
-(13, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', 1),
-(14, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', 1),
-(15, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', 1),
-(16, 'Prémium szoba', 550, 45, 'Francia ágy', 2, 2, 'Wifi,TV,Szauna,Jacuzzi', 1),
-(17, 'Prémium szoba', 550, 45, 'Francia ágy', 2, 2, 'Wifi,TV,Szauna,Jacuzzi', 1),
-(18, 'Prémium szoba', 550, 45, 'Francia ágy', 2, 2, 'Wifi,TV,Szauna,Jacuzzi', 1),
-(19, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(20, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(21, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(22, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(23, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(24, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(25, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(26, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(27, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(28, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1),
-(29, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1),
-(30, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1),
-(31, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1),
-(32, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1),
-(33, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1);
+INSERT INTO `rooms` (`ID`, `Name`, `Price`, `Size`, `Bed`, `Adult`, `Child`, `Services`, `ReservationID`) VALUES
+(1, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(2, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(3, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(4, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(5, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(6, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(7, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(8, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(9, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(10, 'Egyszemélyes szoba', 100, 15, 'Egyszemélyes ágy', 1, 0, 'Wifi,TV', NULL),
+(11, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', NULL),
+(12, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', NULL),
+(13, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', NULL),
+(14, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', NULL),
+(15, 'Tenger oldali szoba', 300, 40, 'Francia ágy', 2, 2, 'Wifi,TV', NULL),
+(16, 'Prémium szoba', 550, 45, 'Francia ágy', 2, 2, 'Wifi,TV,Szauna,Jacuzzi', NULL),
+(17, 'Prémium szoba', 550, 45, 'Francia ágy', 2, 2, 'Wifi,TV,Szauna,Jacuzzi', NULL),
+(18, 'Prémium szoba', 550, 45, 'Francia ágy', 2, 2, 'Wifi,TV,Szauna,Jacuzzi', NULL),
+(19, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(20, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(21, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(22, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(23, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(24, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(25, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(26, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(27, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(28, 'Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', NULL),
+(29, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(30, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(31, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(32, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(33, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL);
 
 --
 -- Indexek a kiírt táblákhoz
