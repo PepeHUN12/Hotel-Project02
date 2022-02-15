@@ -18,3 +18,24 @@ INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability)
 INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Családi szoba', 350, 45, 'Francia ágy', 4, 2, 'Wifi,TV', 1);
 
 INSERT INTO rooms (Name, Price, Size, Bed, Adult, Child, Services, Availability) VALUES ('Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', 1);
+
+CREATE TABLE reservations (
+    ReservationID INT PRIMARY KEY,
+    GuestID INT,
+    FromDate DATE,
+    ToDate DATE,
+    RoomID INT);
+
+CREATE TABLE Guests (
+    GuestID INT PRIMARY KEY,
+    FirstName varchar(255),
+    LastName varchar(255),
+    PhoneNumber INT,
+    Country varchar(255),
+    Zipcode INT,
+    Address varchar(255),
+    Email varchar(255));
+	
+ALTER TABLE rooms DROP COLUMN Availability;
+
+ALTER TABLE rooms ADD COLUMN ReservationID INT;
