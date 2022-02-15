@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -173,49 +173,50 @@
                     <div class="hotel-reservation--area mb-100">
                         <form action="#" method="post">
                             <div class="form-group mb-30">
-                                <label for="checkInDate">Date</label>
+                                <label for="checkInDate">Dátum</label>
                                 <div class="input-daterange" id="datepicker">
                                     <div class="row no-gutters">
                                         <div class="col-6">
-                                            <input type="text" class="input-small form-control" id="checkInDate" name="checkInDate" placeholder="Check In">
+                                            <input type="date" class="input-small form-control" id="checkInDate" name="checkInDate" placeholder="Bejelentkezés">
                                         </div>
                                         <div class="col-6">
-                                            <input type="text" class="input-small form-control" name="checkOutDate" placeholder="Check Out">
+                                            <input type="date" class="input-small form-control" id="checkOut" name="checkOut" placeholder="Kijelentkezés">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mb-30">
-                                <label for="guests">Guests</label>
+                                <label for="guests">Vendégek</label>
                                 <div class="row">
                                     <div class="col-6">
                                         <select name="adults" id="guests" class="form-control">
-                                            <option value="adults">Adults</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
+                                            <option value="adults">Felnőtt</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
                                         </select>
                                     </div>
                                     <div class="col-6">
                                         <select name="children" id="children" class="form-control">
-                                            <option value="children">Children</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
+                                            <option value="children">Gyermek</option>
+                                            <option value="00">-</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mb-50">
                                 <div class="slider-range">
-                                    <div class="range-price">Max ár: $0 - $400</div>
-                                    <div data-min="0" data-max="3000" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="3000" data-label-result="Max Price: ">
+                                    <div class="range-price">Max ár: $0 - $550</div>
+                                    <div data-min="0" data-max="550" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="550" data-label-result="Max Price: ">
                                         <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
@@ -223,7 +224,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn roberto-btn w-100">Check Available</button>
+                                <button type="submit" class="btn roberto-btn w-100">Keresés</button>
                             </div>
                         </form>
                     </div>

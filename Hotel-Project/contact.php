@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <title>Schola - Hotel | Kontakt</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
+    <link rel="icon" href="./img/core-img/schola.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">

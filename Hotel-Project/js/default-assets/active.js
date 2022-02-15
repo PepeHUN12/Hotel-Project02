@@ -257,7 +257,7 @@
     // :: 16.0 Countdown Active Code
     // *****************************
     if ($.fn.countdown) {
-        $("#clock").countdown("2021/10/10", function (event) {
+        $("#clock").countdown("2022/10/10", function (event) {
             $(this).html(event.strftime("<div>%D <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Mins</span></div> <div>%S <span>Sec</span></div>"));
         });
     }
@@ -274,7 +274,7 @@
     // ******************************
     if ($.fn.datepicker) {
         $('.input-daterange').datepicker({
-            format: "dd/mm/yy",
+            format: "éééé/hh/nn",
             multidate: true,
             keyboardNavigation: false,
             forceParse: false,
