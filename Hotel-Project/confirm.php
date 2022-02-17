@@ -12,6 +12,8 @@
         $email = $_POST["email"];
         $emailcon = $_POST["emailcon"];
 
+        
+
         $sql = "INSERT INTO guests (GuestID, FirstName, LastName, PhoneNumber, Email) VALUES (".$guestid.", '".$firstname."', '".$lastname."', ".$phone.", '".$email."')";
 
         if ($conn->query($sql) === TRUE) {
