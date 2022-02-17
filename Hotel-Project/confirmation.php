@@ -17,6 +17,8 @@
 
 </head>
 <body>
+
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
@@ -46,19 +48,23 @@
                 <div class="col-12">
                     <!-- Form -->
                     <div class="roberto-contact-form">
-                        <form action="#" method="post">
+                        <form action="confirm.php" method="post">
                             <div class="row">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Keresztnév">
+                                    <input type="text" name="firstname" class="form-control mb-30" placeholder="Keresztnév">
                                 </div>
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Vezetéknév">
+                                    <input type="text" name="lastname" class="form-control mb-30" placeholder="Vezetéknév">
                                 </div>
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="email" name="message-email" class="form-control mb-30" placeholder="E-mail cím">
+                                    <input type="email" name="email" class="form-control mb-30" placeholder="E-mail cím">
                                 </div>
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="email" name="message-email" class="form-control mb-30" placeholder="E-mail cím megerősítése">
+                                    <input type="email" name="emailcon" class="form-control mb-30" placeholder="E-mail cím megerősítése">
+                                </div>
+
+                                <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                                    <input type="text" name="phone" class="form-control mb-30" placeholder="Telefonszám">
                                 </div>
                                 
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">

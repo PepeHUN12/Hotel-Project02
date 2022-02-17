@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 15. 11:23
+-- Létrehozás ideje: 2022. Feb 17. 12:27
 -- Kiszolgáló verziója: 10.4.22-MariaDB
 -- PHP verzió: 8.1.1
 
@@ -20,6 +20,42 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `hotel`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `guests`
+--
+
+CREATE TABLE `guests` (
+  `GuestID` int(11) NOT NULL,
+  `FirstName` varchar(255) DEFAULT NULL,
+  `LastName` varchar(255) DEFAULT NULL,
+  `PhoneNumber` int(11) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- A tábla adatainak kiíratása `guests`
+--
+
+INSERT INTO `guests` (`GuestID`, `FirstName`, `LastName`, `PhoneNumber`, `Email`) VALUES
+(329, 'peti', 'patyi', 2147483647, 'petike@gmail.com'),
+(873, 'peti', 'patyi', 2147483647, 'petike@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `ReservationID` int(11) NOT NULL,
+  `GuestID` int(11) DEFAULT NULL,
+  `FromDate` date DEFAULT NULL,
+  `ToDate` date DEFAULT NULL,
+  `RoomID` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -76,11 +112,28 @@ INSERT INTO `rooms` (`ID`, `Name`, `Price`, `Size`, `Bed`, `Adult`, `Child`, `Se
 (30, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
 (31, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
 (32, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
-(33, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL);
+(33, 'Kétszemélyes szoba', 200, 30, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(34, 'Kétszemélyes szoba', 200, 20, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(35, 'Kétszemélyes szoba', 200, 20, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(36, 'Kétszemélyes szoba', 200, 20, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(37, 'Kétszemélyes szoba', 200, 20, 'Francia ágy', 2, 0, 'Wifi,TV', NULL),
+(38, 'Kétszemélyes szoba', 200, 20, 'Francia ágy', 2, 0, 'Wifi,TV', NULL);
 
 --
 -- Indexek a kiírt táblákhoz
 --
+
+--
+-- A tábla indexei `guests`
+--
+ALTER TABLE `guests`
+  ADD PRIMARY KEY (`GuestID`);
+
+--
+-- A tábla indexei `reservations`
+--
+ALTER TABLE `reservations`
+  ADD PRIMARY KEY (`ReservationID`);
 
 --
 -- A tábla indexei `rooms`
@@ -96,7 +149,7 @@ ALTER TABLE `rooms`
 -- AUTO_INCREMENT a táblához `rooms`
 --
 ALTER TABLE `rooms`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
