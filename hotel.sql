@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 17. 12:27
+-- Létrehozás ideje: 2022. Feb 17. 13:08
 -- Kiszolgáló verziója: 10.4.22-MariaDB
 -- PHP verzió: 8.1.1
 
@@ -32,16 +32,9 @@ CREATE TABLE `guests` (
   `FirstName` varchar(255) DEFAULT NULL,
   `LastName` varchar(255) DEFAULT NULL,
   `PhoneNumber` int(11) DEFAULT NULL,
-  `Email` varchar(255) DEFAULT NULL
+  `Email` varchar(255) DEFAULT NULL,
+  `Password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- A tábla adatainak kiíratása `guests`
---
-
-INSERT INTO `guests` (`GuestID`, `FirstName`, `LastName`, `PhoneNumber`, `Email`) VALUES
-(329, 'peti', 'patyi', 2147483647, 'petike@gmail.com'),
-(873, 'peti', 'patyi', 2147483647, 'petike@gmail.com');
 
 -- --------------------------------------------------------
 

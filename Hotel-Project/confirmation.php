@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Hotel | Megerősítés</title>
+    <title>Hotel | Regisztráció</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/schola.png">
@@ -38,8 +38,8 @@
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                        <h6>FOGLALÁS</h6>
-                        <h2>Megerőstés</h2>
+                    
+                        <h2>Regisztráció</h2>
                     </div>
                 </div>
             </div>
@@ -59,12 +59,17 @@
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                                     <input type="email" name="email" class="form-control mb-30" placeholder="E-mail cím">
                                 </div>
-                                <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="email" name="emailcon" class="form-control mb-30" placeholder="E-mail cím megerősítése">
-                                </div>
 
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                                     <input type="text" name="phone" class="form-control mb-30" placeholder="Telefonszám">
+                                </div>
+
+                                <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                                    <input type="password" name="password" class="form-control mb-30" placeholder="Jelszó">
+                                </div>
+
+                                <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                                    <input type="password" name="passwordcon" class="form-control mb-30" placeholder="Jelszó megerősítése">
                                 </div>
                                 
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
