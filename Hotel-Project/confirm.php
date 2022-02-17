@@ -9,10 +9,10 @@
         $guestid = rand(1,999);
         $firstname = $_POST["firstname"];
         $lastname = $_POST["lastname"];
-        $phone = $_POST["phone"];
         $email = $_POST["email"];
-        $emailcon = $_POST["emailcon"];
+        $phone = $_POST["phone"];
         $password = $_POST["password"];
+        $emailcon = $_POST["passwordcon"];
 
 
 
