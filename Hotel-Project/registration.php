@@ -32,6 +32,60 @@
     ?>
     <!-- Header Area End -->
 
+    <?php
+
+        include "connection.php";
+
+        $confirm = 0;
+        $guestid = $firstname = $lastname = $email = $phone = $password = $passwordcon = "";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $guestid = rand(1,999);
+            $firstname = $_POST["firstname"];
+            $lastname = $_POST["lastname"];
+            $phone = $_POST["phone"];
+            $email = $_POST["email"];
+            $passwordcon = $_POST["passwordcon"];
+            $password = $_POST["password"];
+
+            if($firstname == "" || $lastname == "" || $phone == "" || $email == "" ||  $password == "" || $passwordcon == "") {
+                echo "Minden mezőt ki kell tölteni ";
+                $confirm++;
+            }
+            else {}
+
+            if($password!=$passwordcon) {
+                echo "A jelszavak nem egyeznek";
+                $confirm++;
+            }
+
+            else {}
+
+
+
+
+            if($confirm == 0) {
+                $sql = "INSERT INTO guests (GuestID, FirstName, LastName, PhoneNumber, Email, Password) 
+                VALUES (".$guestid.", '".$firstname."', '".$lastname."', ".$phone.", '".$email."', '".$password."')";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                    // header('Location: ./siker.php');
+                    } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                    // header('Location: ./hiba.php');
+                }
+            }
+
+           
+
+
+
+            $conn->close();
+        }
+
+
+    ?>
+
     <div class="roberto-contact-form-area section-padding-100">
         <div class="container">
             <div class="row">
@@ -48,7 +102,7 @@
                 <div class="col-12">
                     <!-- Form -->
                     <div class="roberto-contact-form">
-                        <form action="confirm.php" method="post">
+                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                             <div class="row">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                                     <input type="text" name="firstname" class="form-control mb-30" placeholder="Keresztnév">
@@ -61,7 +115,7 @@
                                 </div>
 
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="text" name="phone" class="form-control mb-30" placeholder="Telefonszám">
+                                    <input type="number" name="phone" class="form-control mb-30" placeholder="Telefonszám">
                                 </div>
 
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
