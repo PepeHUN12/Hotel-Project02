@@ -61,11 +61,11 @@ if ($conn->connect_error) {
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInLeft" data-delay="200ms">Hotel &amp; Üdülő</h6>
                                     <h2 data-animation="fadeInLeft" data-delay="500ms">Köszöntelek az oldalunkon</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Fedezd fel most</a>
+                                    <a href="room.php" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Fedezd fel most</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                   </div>
                 </div>
             </div>
 
@@ -80,7 +80,7 @@ if ($conn->connect_error) {
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInLeft" data-delay="200ms">Hotel &amp; Üdülő</h6>
                                     <h2 data-animation="fadeInLeft" data-delay="500ms">Köszöntelek az oldalunkon</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Fedezd fel most</a>
+                                    <a href="room.php" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Fedezd fel most</a>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ if ($conn->connect_error) {
                                 <div class="welcome-text text-center">
                                     <<h6 data-animation="fadeInLeft" data-delay="200ms">Hotel &amp; Üdülő</h6>
                                     <h2 data-animation="fadeInLeft" data-delay="500ms">Köszöntelek az oldalunkon</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Fedezd fel most</a>
+                                    <a href="room.php" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Fedezd fel most</a>
                                 </div>
                             </div>
                         </div>
@@ -260,15 +260,15 @@ if ($conn->connect_error) {
 
                 <!-- Content -->
                 <div class="room-content">
-                    <h2 data-animation="fadeInUp" data-delay="100ms">Premium King Szoba</h2>
-                    <h3 data-animation="fadeInUp" data-delay="300ms">400$ <span>/ Nap</span></h3>
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Premium Szoba</h2>
+                    <h3 data-animation="fadeInUp" data-delay="300ms">550$ <span>/ Nap</span></h3>
                     <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
-                        <li><span><i class="fa fa-check"></i> Méret</span> <span>: 30 ft</span></li>
-                        <li><span><i class="fa fa-check"></i> Kapacitás</span> <span>: Maximum 5 fő</span></li>
-                        <li><span><i class="fa fa-check"></i> Ágy</span> <span>: King Beds</span></li>
-                        <li><span><i class="fa fa-check"></i> Szolgáltatás</span> <span>: Wifi, tv, Fürdőszoba</span></li>
+                        <li><span><i class="fa fa-check"></i> Méret</span> <span>: 45 ft</span></li>
+                        <li><span><i class="fa fa-check"></i> Kapacitás</span> <span>: Maximum 2+2 fő</span></li>
+                        <li><span><i class="fa fa-check"></i> Ágy</span> <span>: Franciaágy</span></li>
+                        <li><span><i class="fa fa-check"></i> Szolgáltatás</span> <span>: Wifi, tv, Sauna Jacuzzi</span></li>
                     </ul>
-                    <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Részletek megtekintése
+                    <a href="room.php" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Részletek megtekintése
                     </a>
                 </div>
             </div>
@@ -280,15 +280,15 @@ if ($conn->connect_error) {
 
                 <!-- Content -->
                 <div class="room-content">
-                    <h2 data-animation="fadeInUp" data-delay="100ms">Best King Szoba</h2>
-                    <h3 data-animation="fadeInUp" data-delay="300ms">125$ <span>/ Nap</span></h3>
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Tenger oldali szoba </h2>
+                    <h3 data-animation="fadeInUp" data-delay="300ms">300$ <span>/ Nap</span></h3>
                     <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
-                        <li><span><i class="fa fa-check"></i> Méret</span> <span>: 30 ft</span></li>
-                        <li><span><i class="fa fa-check"></i> Kapacitás</span> <span>: Maximum 5 fő</span></li>
-                        <li><span><i class="fa fa-check"></i> Ágy</span> <span>: King Beds</span></li>
+                        <li><span><i class="fa fa-check"></i> Méret</span> <span>: 40 ft</span></li>
+                        <li><span><i class="fa fa-check"></i> Kapacitás</span> <span>: Maximum 2+2 fő</span></li>
+                        <li><span><i class="fa fa-check"></i> Ágy</span> <span>: Franciaágy</span></li>
                         <li><span><i class="fa fa-check"></i> Szolgáltatás</span> <span>: Wifi, tv, Fürdőszoba</span></li>
                     </ul>
-                    <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Részletek megtekintése
+                    <a href="room.php   " class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Részletek megtekintése
                     </a>
                 </div>
             </div>
@@ -297,75 +297,6 @@ if ($conn->connect_error) {
     <!-- Our Room Area End -->
     <br>
     <br>
-
-    <!-- Blog Area Start -->
-    <section class="roberto-blog-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h6>Blog</h6>
-                        <h2>Hírek &amp; Események</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Post Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/2.jpg" alt=""></a>
-                        <!-- Post Meta -->
-                        <div class="post-meta">
-                            <a href="#" class="post-date">Jan 02, 2021</a>
-                            <a href="#" class="post-catagory">Esemény</a>
-                        </div>
-                        <!-- Post Title -->
-                        <a href="#" class="post-title">Tanuld meg, hogyan motiválhatod magad
-                        </a>
-                        <p>Hány ingyenes automatikus válaszadót próbáltál ki? És hány e-mailt kaptál meg ezek használatával?</p>
-                        <a href="index.php" class="btn continue-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-
-                <!-- Single Post Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/3.jpg" alt=""></a>
-                        <!-- Post Meta -->
-                        <div class="post-meta">
-                            <a href="#" class="post-date">Jan 02, 2021</a>
-                            <a href="#" class="post-catagory">Esemény</a>
-                        </div>
-                        <!-- Post Title -->
-                        <a href="#" class="post-title">Mi van, ha engedjük futni a Hubble-t
-                        </a>
-                        <p>A lényeg itt az ha fogalma sincs a fenti válaszokról, valószínűleg nem folytat nyomon követést.</p>
-                        <a href="index.php" class="btn continue-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-
-                <!-- Single Post Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <a href="#" class="post-thumbnail"><img src="img/bg-img/4.jpg" alt=""></a>
-                        <!-- Post Meta -->
-                        <div class="post-meta">
-                            <a href="#" class="post-date">Jan 02, 2021</a>
-                            <a href="#" class="post-catagory">Event</a>
-                        </div>
-                        <!-- Post Title -->
-                        <a href="#" class="post-title">Kocka has</a>
-                        <p>Néhány jó lépés annak biztosítására, hogy az automatikus válaszadóból azt kapja, amire szüksége van, többek között…</p>
-                        <a href="index.php" class="btn continue-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Blog Area End -->
     <!-- Footer Start-->
         <?php
         include "footer.php";
