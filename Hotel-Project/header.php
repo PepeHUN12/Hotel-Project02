@@ -84,7 +84,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">vALAMI</a></li>
+                                    <li><a href="#">valami</a></li>
                                     <li><a href="./contact.php">Kapcsolat</a></li>
                                 </ul>
 
@@ -95,7 +95,7 @@
 
                                 <!-- Book Now -->
                                 <div class="book-now-btn ml-3 ml-lg-5">
-                                    <a href="room.php">Foglaljon MOST <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="room.php">Foglaljon <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                             <!-- Nav End -->
