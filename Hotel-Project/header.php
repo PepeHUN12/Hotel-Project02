@@ -70,7 +70,7 @@
                                         <ul class="dropdown">
                                             <li><a href="./index.php">- Főoldal</a></li>
                                             <li><a href="./room.php">- Szobák</a></li>
-                                            <li><a href="./single-room.php">- Egyes szobák</a></li>
+                                            <li><a href="./premium-room.php">- Prémium szobák</a></li>
                                             <li><a href="./about.php">- Rólunk</a></li>
                                             <li><a href="#">- Valami</a></li>
                                             <li><a href="./contact.php">- Kapcsolat</a></li>

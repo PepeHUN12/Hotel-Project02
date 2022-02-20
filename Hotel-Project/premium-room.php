@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Schola - Hotel | Egy ágyas szobák</title>
+    <title>Schola - Hotel | Prémium Szobák</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/schola.png">
@@ -37,8 +37,8 @@
             <div class="row h-100 align-items-end">
                 <div class="col-12">
                     <div class="breadcrumb-content d-flex align-items-center justify-content-between pb-5">
-                        <h2 class="room-title">Room View Sea</h2>
-                        <h2 class="room-price">$180 <span>/ Per Night</span></h2>
+                        <h2 class="room-title">Tengerre nyíló kilátás</h2>
+                        <h2 class="room-price">$550 <span>/Nap</span></h2>
                     </div>
                 </div>
             </div>
@@ -96,13 +96,13 @@
 
                         <!-- Room Features -->
                         <div class="room-features-area d-flex flex-wrap mb-50">
-                            <h6>Size: <span>350-425sqf</span></h6>
-                            <h6>Capacity: <span>Max persion 5</span></h6>
-                            <h6>Bed: <span>King beds</span></h6>
-                            <h6>Services: <span>Wifi, television ...</span></h6>
+                            <h6>Méret: <span>350-425sqf</span></h6>
+                            <h6>Férőhely: <span>Max persion 5</span></h6>
+                            <h6>Ágy: <span>Franciaágy</span></h6>
+                            <h6>Services: <span>Wifi, television, Szauna, Jacuzzi</span></h6>
                         </div>
 
-                        <p>If you live in New York City or travel to and from New York City a lot, you know all about the traffic there. Getting places is often next to impossible, even with the gazillion yellow cabs. If you’re like me you often look with envy at those shiny limousines with their unformed drivers and wish you could sit in one. Well, you can. New York limo service is more affordable than you think, whether it’s for Newark airport transportation, LaGuardia airport transportation, or to drive wherever you wish to go.</p>
+                        <p>A Kanári-szigetek legnagyobbika, Tenerife igazi turistaparadicsom: fantasztikus klímájának köszönhetően egész évben tart itt a szezon. A legtöbb turista a nap és a tengerpart kedvéért érkezik, és a sziget 269 km. hosszú, változatos partszakaszain minden lehetőség adott is egy tökéletes vízparti nyaraláshoz. Az örök tavasz szigetének is nevezett Tenerife azonban a tenger mellett számtalan egyéb kikapcsolódási lehetőséget nyújt. A családosok biztosan élvezni fogják a Siam Parkot, amelyet többször is Európa legjobb vízi vidámparkjának választottak, a híres majomparkot és a pingvineket, delfineket, fókákat és bálnákat szerepeltető Loro Parkot. Aki pedig egy-egy napra hajlandó maga mögött hagyni a partok kényelmét, életre szóló emlékeket szerezhet a vulkanikus sziget különleges túraútvonalain. Mászd meg a 3718 méteres Teide vulkánt, csodáld meg a Teide Nemzeti Park pazar sziklaformáit, a lávakitörések lenyűgöző természeti lenyomatait, túrázz szurdokban vagy kajakozz óriás sziklafalak között – az életre szóló élmény garantált.</p>
 
                         <ul>
                             <li><i class="fa fa-check"></i> Mauris molestie lectus in irdiet auctor.</li>
@@ -121,12 +121,12 @@
                         <h4>Room Services</h4>
 
                         <ul>
-                            <li><img src="img/core-img/icon1.png" alt=""> Air Conditioning</li>
-                            <li><img src="img/core-img/icon2.png" alt=""> Free drinks</li>
-                            <li><img src="img/core-img/icon3.png" alt=""> Restaurant quality</li>
-                            <li><img src="img/core-img/icon4.png" alt=""> Cable TV</li>
-                            <li><img src="img/core-img/icon5.png" alt=""> Unlimited Wifi</li>
-                            <li><img src="img/core-img/icon6.png" alt=""> Service 24/24</li>
+                            <li><img src="img/core-img/icon1.png" alt=""> Klíma</li>
+                            <li><img src="img/core-img/icon2.png" alt=""> Ingyen italok</li>
+                            <li><img src="img/core-img/icon3.png" alt=""> Étterem</li>
+                            <li><img src="img/core-img/icon4.png" alt=""> Okos TV</li>
+                            <li><img src="img/core-img/icon5.png" alt=""> Korlátlan Wifi</li>
+                            <li><img src="img/core-img/icon6.png" alt=""> Szervíz 0-24</li>
                         </ul>
                     </div>
 
@@ -142,7 +142,7 @@
                             <div class="reviwer-content">
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
-                                        <span>27 Aug 2019</span>
+                                        <span>27 Aug 2021</span>
                                         <h6>Brandon Kelley</h6>
                                     </div>
                                     <div class="reviwer-rating">
@@ -199,61 +199,63 @@
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam  modi tempora.</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
+                    
                 <div class="col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
                     <div class="hotel-reservation--area mb-100">
-                        <form action="#" method="post">
+                    <form action="#" method="post">
                             <div class="form-group mb-30">
-                                <label for="checkInDate">Date</label>
-                                <div class="input-daterange" id="datepicker">
+                                <label for="checkInDate">Dátum</label>
+                                <div>
                                     <div class="row no-gutters">
                                         <div class="col-6">
-                                            <input type="text" class="input-small form-control" name="checkInDate" id="checkInDate" placeholder="Check In">
+                                            <input type="date" class="input-small form-control" id="checkInDate" name="checkInDate" placeholder="Bejelentkezés">
                                         </div>
                                         <div class="col-6">
-                                            <input type="text" class="input-small form-control" name="checkOutDate" placeholder="Check Out">
+                                            <input type="date" class="input-small form-control" id="checkOut" name="checkOut" placeholder="Kijelentkezés">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mb-30">
-                                <label for="guests">Guests</label>
+                                <label for="guests">Vendégek</label>
                                 <div class="row">
                                     <div class="col-6">
                                         <select name="adults" id="guests" class="form-control">
-                                            <option value="adults">Adults</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
+                                            <option value="adults">Felnőtt</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
                                         </select>
                                     </div>
                                     <div class="col-6">
                                         <select name="children" id="children" class="form-control">
-                                            <option value="children">Children</option>
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
+                                            <option value="children">Gyermek</option>
+                                            <option value="00">-</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mb-50">
                                 <div class="slider-range">
-                                    <div class="range-price">Max Price: $0 - $3000</div>
-                                    <div data-min="0" data-max="3000" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="3000" data-label-result="Max Price: ">
+                                    <div class="range-price">Max ár: $0 - $550</div>
+                                    <br>
+                                    <div data-min="0" data-max="550" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="550" data-label-result="Max Price: ">
                                         <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
@@ -261,7 +263,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn roberto-btn w-100">Check Available</button>
+                                <button type="submit" class="btn roberto-btn w-100">Keresés</button>
                             </div>
                         </form>
                     </div>
