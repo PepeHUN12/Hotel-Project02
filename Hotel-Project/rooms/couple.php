@@ -6,12 +6,12 @@
                         <!-- Room Content -->
                         <div class="room-content">
                             <h2>Páros szoba</h2>
-                            <h4>400$ <span>/ Day</span></h4>
+                            <h4>200$ <span>/ Nap</span></h4>
                             <div class="room-feature">
-                                <h6>Size: <span>30 ft</span></h6>
-                                <h6>Capacity: <span>Max persion 5</span></h6>
-                                <h6>Bed: <span>King beds</span></h6>
-                                <h6>Services: <span>Wifi, television ...</span></h6>
+                                <h6>méter: <span>30 ft</span></h6>
+                                <h6>férőhely: <span>2</span></h6>
+                                <h6>Ágy: <span>Franciaágy</span></h6>
+                                <h6>Szervíz: <span>Wifi, Tv</span></h6>
                             </div>
                             <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>

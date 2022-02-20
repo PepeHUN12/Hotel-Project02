@@ -72,7 +72,7 @@
                 include "rooms/couple.php"
                 ?>
                  <?php
-                include "rooms/couple.php"
+                include "rooms/single.php"
                 ?>
 
                     <!-- Pagination -->
