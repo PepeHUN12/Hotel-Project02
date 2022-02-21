@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 17. 13:08
+-- Létrehozás ideje: 2022. Feb 21. 19:20
 -- Kiszolgáló verziója: 10.4.22-MariaDB
--- PHP verzió: 8.1.1
+-- PHP verzió: 8.0.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,6 +35,15 @@ CREATE TABLE `guests` (
   `Email` varchar(255) DEFAULT NULL,
   `Password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- A tábla adatainak kiíratása `guests`
+--
+
+INSERT INTO `guests` (`GuestID`, `FirstName`, `LastName`, `PhoneNumber`, `Email`, `Password`) VALUES
+(782, 'Péter', 'Patyi', 12345, 'petike@gmail.com', 'asd'),
+(860, 'Zoltán', 'Lipovniczky ', 12345, 'zoli@gmail.com', 'asd'),
+(958, 'Olivér ', 'Szabó', 12345, 'oliver@gmail.com', 'asd');
 
 -- --------------------------------------------------------
 
