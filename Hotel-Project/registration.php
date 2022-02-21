@@ -36,10 +36,31 @@
 
         include "connection.php";
 
-        $confirm = 0;
+        
+        $confirm = "0";
         $guestid = $firstname = $lastname = $email = $phone = $password = $passwordcon = "";
+
+        $getidsql = "SELECT GuestID FROM guests";
+        $getid = $conn->query($getidsql);
+        $idcheck = 0;
+        $guestid = rand(1,999);
+        do {
+            
+            while ($result = $getid->fetch_assoc()) {
+                $check = $result["GuestID"];
+                if ($check == $guestid) {
+                    $idcheck++;
+                }
+            }
+            
+
+        } while ($idcheck != 0);
+
+
+        $conn->close();
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $guestid = rand(1,999);
+            
+
             $firstname = $_POST["firstname"];
             $lastname = $_POST["lastname"];
             $phone = $_POST["phone"];
