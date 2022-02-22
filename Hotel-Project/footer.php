@@ -10,7 +10,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-5 text-right">
-                        <a href="#" class="btn roberto-btn mb-50">Kapcsolatfelvétel</a>
+                        <a href="contact.php" class="btn roberto-btn mb-50">Kapcsolatfelvétel</a>
                     </div>
                 </div>
             </div>

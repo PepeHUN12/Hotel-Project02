@@ -72,9 +72,9 @@
                                         <ul class="dropdown">
                                             <li><a href="./index.php">- Főoldal</a></li>
                                             <li><a href="./room.php">- Szobák</a></li>
-                                            <li><a href="./single-room.php">- Egyes szobák</a></li>
+                                            <li><a href="./premium-room.php">- Prémium szobák</a></li>
                                             <li><a href="./about.php">- Rólunk</a></li>
-                                            <li><a href="./blog.php">- Blog</a></li>
+                                            <li><a href="#">- Valami</a></li>
                                             <li><a href="./contact.php">- Kapcsolat</a></li>
                                             <li><a href="#">- Dropdown</a>
                                                 <ul class="dropdown">
@@ -86,7 +86,11 @@
                                             </li>
                                         </ul>
                                     </li>
-<!--                                    <li><a href="./blog.php">hírek</a></li> -->
+
+                                  <li><a href="./blog.php">hírek</a></li> -->
+
+                                    <li><a href="#">valami</a></li>
+
                                     <li><a href="./contact.php">Kapcsolat</a></li>
                                 </ul>
 
@@ -97,7 +101,7 @@
 
                                 <!-- Book Now -->
                                 <div class="book-now-btn ml-3 ml-lg-5">
-                                    <a href="#">Foglaljon MOST <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="room.php">Foglaljon <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>

@@ -38,11 +38,11 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">Szobáink</h2>
+                        <h2 class="page-title">Our Room</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="index.html">Főoldal</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Szobák</li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Room</li>
                             </ol>
                         </nav>
                     </div>
@@ -57,42 +57,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    
-
-                <?php
-                include "rooms/seaside.php"
-                ?>
-                 <?php
-                include "rooms/family.php"
-                ?>
-                 <?php
-                include "rooms/premium.php"
-                ?>
-                 <?php
-                include "rooms/couple.php"
-                ?>
-                 <?php
-                include "rooms/single.php"
-                ?>
-
-                    <!-- Pagination -->
-                    <nav class="roberto-pagination wow fadeInUp mb-100" data-wow-delay="1000ms">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next <i class="fa fa-angle-right"></i></a></li>
-                        </ul>
-                    </nav>
+                <?php             
+                    include "rooms/seaside.php";
+                    include "rooms/premium.php";
+                    include "rooms/family.php";
+                    include "rooms/couple.php";
+                    include "rooms/single.php";
+                 ?>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
-                    <div class="area mb-100">
+                    <div class="hotel-reservation--area mb-100">
                         <form action="#" method="post">
                             <div class="form-group mb-30">
                                 <label for="checkInDate">Dátum</label>
-                                <div>
+                                <div class="input-daterange" id="datepicker">
                                     <div class="row no-gutters">
                                         <div class="col-6">
                                             <input type="date" class="input-small form-control" id="checkInDate" name="checkInDate" placeholder="Bejelentkezés">
@@ -134,8 +114,7 @@
                             <div class="form-group mb-50">
                                 <div class="slider-range">
                                     <div class="range-price">Max ár: $0 - $550</div>
-                                    <br>
-                                    <div data-min="0" data-max="550" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="550" data-label-result="Max Price: ">
+                                    <div data-min="1" data-max="550" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="1" data-value-max="550" data-label-result="Max-Price: 550">
                                         <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
