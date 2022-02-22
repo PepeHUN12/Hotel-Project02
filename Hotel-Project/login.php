@@ -33,12 +33,29 @@
     include "connection.php";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+        $getemail = $_POST["getemail"];
+        $getpassword = $_POST["getpassword"];
 
+        $successful = false;
 
+        $sql = "SELECT Email, Password FROM Guests";
+        $getlogin = $conn->query($sql);
+        while ($result = $getlogin->fetch_assoc()) {
+            $email = $result["Email"];
+            $password = $result["Password"];
+            if ($getemail === $email) {
+                if ($getpassword === $password) {
+                    echo "Sikeres bejelentkezés";
+                    $successful = true;
+                }
+            }
+        }
+    if (!$successful) {
+        echo "Sikertelen Bejelentkezés";
     }
 
+    }
+    $conn->close();
     ?>
 
     <div class="roberto-contact-form-area section-padding-100">
@@ -60,12 +77,12 @@
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                             <div class="row">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input style="border: solid black 1px" type="email" name="email" class="form-control mb-30" placeholder="Email-Cím">
+                                    <input style="border: solid black 1px" type="email" name="getemail" class="form-control mb-30" placeholder="Email-Cím">
                                 </div> 
                             </div>
                             <div class="row">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input style="border: solid black 1px" type="password" name="password" class="form-control mb-30" placeholder="Jelszó">
+                                    <input style="border: solid black 1px" type="password" name="getpassword" class="form-control mb-30" placeholder="Jelszó">
                                 </div>
                             </div>
                             <div class="row">
