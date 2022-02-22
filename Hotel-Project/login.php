@@ -84,6 +84,9 @@
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                                     <input style="border: solid black 1px" type="password" name="getpassword" class="form-control mb-30" placeholder="Jelszó">
                                 </div>
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                                    <button type="submit" class="btn roberto-btn mt-15">Bejelentkezés</button>
+                                </div>
                             </div>
                             <div class="row">
                                 <a href="registration.php"> Regisztráció </a>

@@ -87,7 +87,7 @@
                                         </ul>
                                     </li>
 
-                                  <li><a href="./blog.php">hírek</a></li> -->
+                                <!--  <li><a href="./blog.php">hírek</a></li>-->
 
                                     <li><a href="#">valami</a></li>
 
