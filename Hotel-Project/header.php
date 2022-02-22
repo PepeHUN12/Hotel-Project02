@@ -19,6 +19,8 @@
                         <div class="top-header-content">
                             <a href="#"><i class="icon_phone"></i> <span>(+36) 30-789-1230</span></a>
                             <a href="#"><i class="icon_mail"></i> <span>schola@scholaeu.hu</span></a>
+                            <a name="log/reg" href="login.php">Bejelentkezés</a>
+
                         </div>
                     </div>
 
@@ -84,7 +86,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="./blog.php">hírek</a></li>
+<!--                                    <li><a href="./blog.php">hírek</a></li> -->
                                     <li><a href="./contact.php">Kapcsolat</a></li>
                                 </ul>
 
@@ -97,6 +99,7 @@
                                 <div class="book-now-btn ml-3 ml-lg-5">
                                     <a href="#">Foglaljon MOST <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                 </div>
+
                             </div>
                             <!-- Nav End -->
                         </div>
