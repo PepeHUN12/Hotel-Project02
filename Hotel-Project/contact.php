@@ -40,11 +40,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center mt-100">
-                        <h2 class="page-title">Contact Us</h2>
+                        <h2 class="page-title">Kapcsolat</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                <li class="breadcrumb-item"><a href="index.html">Kezdőlap</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Elérhetőségek</li>
                             </ol>
                         </nav>
                     </div>
@@ -63,15 +63,15 @@
                     <div class="col-6 col-lg-3">
                         <div class="single-contact-info">
                             <i class="fa fa-phone" aria-hidden="true"></i>
-                            <h4>Phone</h4>
-                            <p>+01-234-567-890</p>
+                            <h4>Telefonszám</h4>
+                            <p>+36-24-5567-890</p>
                         </div>
                     </div>
                     <!-- Single Contact Info -->
                     <div class="col-6 col-lg-3">
                         <div class="single-contact-info">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <h4>Address</h4>
+                            <h4>Cím</h4>
                             <p>Iris Watson, 283 Fusce Rd,NY</p>
                         </div>
                     </div>
@@ -79,8 +79,8 @@
                     <div class="col-6 col-lg-3">
                         <div class="single-contact-info">
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <h4>Open time</h4>
-                            <p>10:00 am to 23:00 pm</p>
+                            <h4>Nyitvatartási idő</h4>
+                            <p>10:00-23:00</p>
                         </div>
                     </div>
                     <!-- Single Contact Info -->
@@ -109,8 +109,8 @@
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h6>Contact Us</h6>
-                        <h2>Leave Message</h2>
+                        <h6>Elérhetőségek</h6>
+                        <h2>Hagyjon üzenetet</h2>
                     </div>
                 </div>
             </div>
@@ -122,16 +122,16 @@
                         <form action="#" method="post">
                             <div class="row">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
-                                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Teljes név">
                                 </div>
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
-                                    <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                                    <input type="email" name="message-email" class="form-control mb-30" placeholder="Email cím">
                                 </div>
                                 <div class="col-12 wow fadeInUp" data-wow-delay="100ms">
-                                    <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                                    <textarea name="message" class="form-control mb-30" placeholder="Megjegyzés"></textarea>
                                 </div>
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms">
-                                    <button type="submit" class="btn roberto-btn mt-15">Send Message</button>
+                                    <button type="submit" class="btn roberto-btn mt-15">Küldés</button>
                                 </div>
                             </div>
                         </form>

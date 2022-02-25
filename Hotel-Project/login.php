@@ -75,21 +75,21 @@
                     <!-- Form -->
                     <div class="roberto-contact-form">
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-                            <div class="row">
+                            <div class="row" style="padding-left:34%" >
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                                     <input style="border: solid black 1px" type="email" name="getemail" class="form-control mb-30" placeholder="Email-Cím">
                                 </div> 
                             </div>
-                            <div class="row">
+                            <div class="row" style="padding-left:34%">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                                     <input style="border: solid black 1px" type="password" name="getpassword" class="form-control mb-30" placeholder="Jelszó">
                                 </div>
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <button type="submit" class="btn roberto-btn mt-15">Bejelentkezés</button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <a href="registration.php"> Regisztráció </a>
+                            <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                            <button type="submit" class="btn roberto-btn mt-15">Bejelentkezés</button>    
+                            <a href="registration.php" class="btn roberto-btn mt-15"> Regisztráció </a>
                             </div>
                         </form>
                     </div>
