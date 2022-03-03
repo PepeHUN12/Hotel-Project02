@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -28,8 +32,8 @@
     
     <!-- Header Area Start -->
     <?php 
+    
     include "header.php";
-
     include "connection.php";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -46,6 +50,8 @@
             if ($getemail === $email) {
                 if ($getpassword === $password) {
                     echo "Sikeres bejelentkezés";
+                    $_SESSION["semail"] = $email;
+                 //   echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                     $successful = true;
                 }
             }
@@ -77,10 +83,10 @@
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                             <div class="row">
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="email" name="firstname" class="form-control mb-30" placeholder="Email">
+                                    <input type="email" name="getemail" class="form-control mb-30" placeholder="Email">
                                 </div>
                                 <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <input type="password" name="lastname" class="form-control mb-30" placeholder="Jelszó">
+                                    <input type="password" name="getpassword" class="form-control mb-30" placeholder="Jelszó">
                                 </div>
                                 
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">

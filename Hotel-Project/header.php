@@ -21,6 +21,8 @@
                             <a href="#"><i class="icon_mail"></i> <span>schola@scholaeu.hu</span></a>
                             
 
+                            
+
                         </div>
                     </div>
 
@@ -32,6 +34,24 @@
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a>
+                                    <?php 
+                                        include "connection.php";
+                                        
+                                        
+                                        if ($_SESSION["semail"] != null) {
+                                        $sql = "SELECT Email, FirstName, LastName FROM Guests";
+                                        $result = $conn->query($sql);
+                                        while($row = $result->fetch_assoc()) {
+                                            if ($row["Email"] == $_SESSION["semail"]) {
+                                              echo "<span> ".$row["LastName"]." ".$row["FirstName"]." </span> ";
+                                            }
+                                            else {
+                                                
+                                            }
+                                        }
+                                        }
+                                        $conn->close();
+                                ?>
                             </div>
                         </div>
                     </div>
