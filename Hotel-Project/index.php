@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+//unset($_SESSION["semail"]);
+?>
 <!DOCTYPE html>
 <html lang="hu">
 

@@ -1,5 +1,4 @@
-<?php
-// Start the session
+<?php 
 session_start();
 ?>
 <!DOCTYPE html>
@@ -33,35 +32,37 @@ session_start();
     <!-- Header Area Start -->
     <?php 
     
-    include "header.php";
+    
     include "connection.php";
+    
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $getemail = $_POST["getemail"];
         $getpassword = $_POST["getpassword"];
 
-        $successful = false;
-
-        $sql = "SELECT Email, Password FROM Guests";
+        $sql = "SELECT Email, Password, FirstName, LastName FROM Guests WHERE Email = '".$getemail."' and Password = '".$getpassword."' LIMIT 1";
         $getlogin = $conn->query($sql);
-        while ($result = $getlogin->fetch_assoc()) {
-            $email = $result["Email"];
-            $password = $result["Password"];
-            if ($getemail === $email) {
-                if ($getpassword === $password) {
-                    echo "Sikeres bejelentkezés";
-                    $_SESSION["semail"] = $email;
-                 //   echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
-                    $successful = true;
-                }
+        if ($getlogin->num_rows > 0) {
+            while ($result = $getlogin->fetch_assoc()) {
+
+                        $_SESSION["semail"] = $result["Email"];
+                        $_SESSION["sfirstname"] = $result["FirstName"];
+                        $_SESSION["slastname"] = $result["LastName"];
+                        echo "Sikeres bejelentkezés";
+                        //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
+
+
             }
         }
-    if (!$successful) {
-        echo "Sikertelen Bejelentkezés";
-    }
+        else {
+            echo ' Sikertelen';
+        }
+ 
 
     }
+    
     $conn->close();
+    include "header.php";
     ?>
 
     <div class="roberto-contact-form-area section-padding-100">

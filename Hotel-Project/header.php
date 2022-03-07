@@ -33,23 +33,25 @@
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a>
+
                                     <?php 
+                                    if (isset($_SESSION["semail"])) {
+                                        echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
+                                    }
+                                    else {
+                                        echo "<script type='text/javascript'>alert('nemjó');</script>";
+                                    }
+                                    //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                                         include "connection.php";
                                         
                                         
-                                        if ($_SESSION["semail"] != null) {
-                                        $sql = "SELECT Email, FirstName, LastName FROM Guests";
-                                        $result = $conn->query($sql);
-                                        while($row = $result->fetch_assoc()) {
-                                            if ($row["Email"] == $_SESSION["semail"]) {
-                                              echo "<span> ".$row["LastName"]." ".$row["FirstName"]." </span> ";
-                                            }
-                                            else {
-                                                
-                                            }
+                                        if (isset($_SESSION["semail"])) {
+                                            echo " <a href='#'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> ";
                                         }
+                                        else {
+                                            echo ' <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a> ';
                                         }
+                                        
                                         $conn->close();
                                 ?>
                             </div>
