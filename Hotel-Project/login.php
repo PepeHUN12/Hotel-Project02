@@ -31,11 +31,25 @@ session_start();
     
     <!-- Header Area Start -->
     <?php 
-    
+    include "header.php";
+    ?>
+
+    <div class="roberto-contact-form-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                    
+                        <h2>Bejelentkezés</h2>
+                    </div>
+                </div>
+            </div>
+
+            <?php 
     
     include "connection.php";
     
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $getemail = $_POST["getemail"];
         $getpassword = $_POST["getpassword"];
@@ -55,27 +69,12 @@ session_start();
             }
         }
         else {
-            echo ' Sikertelen';
+            echo ' Sikertelen Bejelentkezés';
         }
- 
-
     }
     
     $conn->close();
-    include "header.php";
     ?>
-
-    <div class="roberto-contact-form-area section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading -->
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                    
-                        <h2>Bejelentkezés</h2>
-                    </div>
-                </div>
-            </div>
 
             <div class="row">
                 <div class="col-12">

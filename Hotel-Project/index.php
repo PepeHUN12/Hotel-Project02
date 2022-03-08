@@ -20,7 +20,6 @@ session_start();
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
 
 </head>
 

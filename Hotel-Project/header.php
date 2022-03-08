@@ -34,7 +34,7 @@
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
-                                    <?php 
+                                <?php 
                                     if (isset($_SESSION["semail"])) {
                                         //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                                     }
