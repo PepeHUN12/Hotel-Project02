@@ -42,12 +42,10 @@
                                         //echo "<script type='text/javascript'>alert('nemjó');</script>";
                                     }
                                     //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
-                                        include "connection.php";
-                                        
-                                        
+                                        include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
                                             echo " <a class='nevkiir'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> 
-                                            <a  href='logout.php' class='kijelentkezes'>Kijelentkezés</a>";
+                                            <a  href='logout.php' style='color:red' class='kijelentkezes'>Kijelentkezés</a>";
                                         }
                                         else {
                                             echo ' <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a> ';
