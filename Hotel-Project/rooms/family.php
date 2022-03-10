@@ -1,7 +1,7 @@
 <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: fadeInUp;">
                         <!-- Room Thumbnail -->
                         <div class="room-thumbnail">
-                            <img src="img/bg-img/46.jpg" alt="">
+                            <img src="img\bg-img\46.jpg" alt="csaladi">
                         </div>
 
                         <?php 
