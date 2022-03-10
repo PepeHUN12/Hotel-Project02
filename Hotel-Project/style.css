@@ -2446,4 +2446,17 @@ html .ui-button.ui-state-disabled:active {
     .comment_area .children .single_comment_area:last-of-type {
       margin-bottom: 0; }
 
+      .kijelentkezes {
+        display: none;
+      }
+      
+      a:hover .nevkiir {
+        display: none;
+      }
+      
+      .kijelentkezes a:hover {
+        display: inline;
+        color: red;
+      }
+
 /*# sourceMappingURL=style.css.map */
