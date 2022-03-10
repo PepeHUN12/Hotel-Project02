@@ -38,7 +38,7 @@ session_start();
     
 
     <!-- Breadcrumb Area Start -->
-    <div class="breadcrumb-area contact-breadcrumb bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/18.jpg);">
+    <div class="breadcrumb-area contact-breadcrumb bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/t2.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -98,9 +98,7 @@ session_start();
 
                 <!-- Google Maps -->
                 <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82774.69671830302!2d24.077286625210185!3d56.96328499537209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb0e5073ded%3A0x400cfcd68f2fe30!2sRiga%2C+Latvia!5e0!3m2!1sen!2sbd!4v1549536732147" allowfullscreen></iframe>
-                </div>
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757.9845685901487!2d-16.733806092633614!3d28.054304297385862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a977b76eb70ff%3A0x4ce595d48d20d41c!2sPlaya%20de%20las%20Am%C3%A9ricas%2C%20Santa%20Cruz%20de%20Tenerife%2C%20Spanyolorsz%C3%A1g!5e1!3m2!1shu!2shu!4v1646929698060!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            </div>
         </div>
     </section>
     <!-- Google Maps & Contact Info Area End -->

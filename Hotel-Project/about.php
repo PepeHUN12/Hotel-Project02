@@ -35,12 +35,12 @@ session_start();
     <!-- Header Area End -->
 
     <!-- Breadcrumb Area Start -->
-    <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/16.jpg);">
+    <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/t3.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">About Us</h2>
+                        <h2 class="page-title">rólunk</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="index.html">Főoldal</a></li>

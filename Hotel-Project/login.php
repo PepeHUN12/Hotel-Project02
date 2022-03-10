@@ -62,6 +62,7 @@ session_start();
                         $_SESSION["semail"] = $result["Email"];
                         $_SESSION["sfirstname"] = $result["FirstName"];
                         $_SESSION["slastname"] = $result["LastName"];
+                        
                         //echo "Sikeres bejelentkezés";
                         //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
 
@@ -76,7 +77,7 @@ session_start();
     $conn->close();
     ?>
 
-            <div class="row">
+            <div class="row"> 
                 <div class="col-12">
                     <!-- Form -->
                     <div class="roberto-contact-form">
