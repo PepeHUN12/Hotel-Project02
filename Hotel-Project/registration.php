@@ -36,16 +36,13 @@
 
         include "connection.php";
 
-        
         $confirm = "0";
         $guestid = $firstname = $lastname = $email = $phone = $password = $passwordcon = "";
-
         $getidsql = "SELECT GuestID FROM guests";
-        $getid = $conn->query($getidsql);
         $idcheck = 0;
-        $guestid = rand(1,999);
         do {
-            
+            $getid = $conn->query($getidsql);
+            $guestid = rand(1,999);
             while ($result = $getid->fetch_assoc()) {
                 $check = $result["GuestID"];
                 if ($check == $guestid) {
@@ -57,7 +54,6 @@
         } while ($idcheck != 0);
 
 
-        $conn->close();
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
 
@@ -89,7 +85,7 @@
                 VALUES (".$guestid.", '".$firstname."', '".$lastname."', ".$phone.", '".$email."', '".$password."')";
 
                 if ($conn->query($sql) === TRUE) {
-                    echo "New record created successfully";
+                    echo "Sikeres regisztáció";
                     // header('Location: ./siker.php');
                     } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
