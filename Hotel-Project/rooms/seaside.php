@@ -6,7 +6,7 @@
 
                         <?php 
                             include "connection.php";
-                            $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Egyszemélyes szoba" LIMIT 1';
+                            $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Tenger oldali szoba" LIMIT 1';
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) { 
                                 while ($row = $result->fetch_assoc()) {
