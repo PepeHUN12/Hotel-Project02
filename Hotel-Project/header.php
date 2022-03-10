@@ -34,19 +34,19 @@
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
-                                    <?php 
+                                <?php 
                                     if (isset($_SESSION["semail"])) {
-                                        echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
+                                        //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                                     }
                                     else {
-                                        echo "<script type='text/javascript'>alert('nemjó');</script>";
+                                        //echo "<script type='text/javascript'>alert('nemjó');</script>";
                                     }
                                     //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                                         include "connection.php";
                                         
                                         
                                         if (isset($_SESSION["semail"])) {
-                                            echo " <a href='#'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> ";
+                                            echo " <a href='logout.php' class='logout'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> ";
                                         }
                                         else {
                                             echo ' <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a> ';

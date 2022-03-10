@@ -31,37 +31,6 @@ session_start();
     
     <!-- Header Area Start -->
     <?php 
-    
-    
-    include "connection.php";
-    
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $getemail = $_POST["getemail"];
-        $getpassword = $_POST["getpassword"];
-
-        $sql = "SELECT Email, Password, FirstName, LastName FROM Guests WHERE Email = '".$getemail."' and Password = '".$getpassword."' LIMIT 1";
-        $getlogin = $conn->query($sql);
-        if ($getlogin->num_rows > 0) {
-            while ($result = $getlogin->fetch_assoc()) {
-
-                        $_SESSION["semail"] = $result["Email"];
-                        $_SESSION["sfirstname"] = $result["FirstName"];
-                        $_SESSION["slastname"] = $result["LastName"];
-                        echo "Sikeres bejelentkezés";
-                        //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
-
-
-            }
-        }
-        else {
-            echo ' Sikertelen';
-        }
- 
-
-    }
-    
-    $conn->close();
     include "header.php";
     ?>
 
@@ -76,6 +45,36 @@ session_start();
                     </div>
                 </div>
             </div>
+
+            <?php 
+    
+    include "connection.php";
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $getemail = $_POST["getemail"];
+        $getpassword = $_POST["getpassword"];
+
+        $sql = "SELECT Email, Password, FirstName, LastName FROM Guests WHERE Email = '".$getemail."' and Password = '".$getpassword."' LIMIT 1";
+        $getlogin = $conn->query($sql);
+        if ($getlogin->num_rows > 0) {
+            while ($result = $getlogin->fetch_assoc()) {
+
+                        $_SESSION["semail"] = $result["Email"];
+                        $_SESSION["sfirstname"] = $result["FirstName"];
+                        $_SESSION["slastname"] = $result["LastName"];
+                        //echo "Sikeres bejelentkezés";
+                        //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
+
+
+            }
+        }
+        else {
+            echo ' Sikertelen Bejelentkezés';
+        }
+    }
+    
+    $conn->close();
+    ?>
 
             <div class="row">
                 <div class="col-12">

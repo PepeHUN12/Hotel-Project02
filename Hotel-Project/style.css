@@ -1,5 +1,6 @@
 
 /* Import Fonts & All CSS */
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
@@ -12,6 +13,9 @@
 @import url(css/bootstrap-datepicker.min.css);
 @import url(css/jquery-ui.min.css);
 /* :: 01.0 Reboot Area CSS */
+
+
+
 * {
   margin: 0;
   padding: 0; }
