@@ -45,7 +45,7 @@ include "connection.php";
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/16.jpg);" data-img-url="img/bg-img/16.jpg">
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/t1.jpg);" data-img-url="img/bg-img/t1.jpg">
                 <!-- Welcome Content -->
                 <div class="welcome-content h-100">
                     <div class="container h-100">
@@ -64,7 +64,7 @@ include "connection.php";
             </div>
 
             <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/17.jpg);" data-img-url="img/bg-img/17.jpg">
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/t2.jpg);" data-img-url="img/bg-img/t2.jpg">
                 <!-- Welcome Content -->
                 <div class="welcome-content h-100">
                     <div class="container h-100">
@@ -83,7 +83,7 @@ include "connection.php";
             </div>
 
             <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/18.jpg);" data-img-url="img/bg-img/18.jpg">
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/t3.jpg);" data-img-url="img/bg-img/t3.jpg">
                 <!-- Welcome Content -->
                 <div class="welcome-content h-100">
                     <div class="container h-100">
@@ -250,7 +250,7 @@ include "connection.php";
             <!-- Single Room Slide -->
             <div class="single-room-slide d-flex align-items-center">
                 <!-- Thumbnail -->
-                <div class="room-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                <div class="room-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/premiumIndex.jpg);"></div>
 
                 <!-- Content -->
                 <div class="room-content">
@@ -270,7 +270,7 @@ include "connection.php";
             <!-- Single Room Slide -->
             <div class="single-room-slide d-flex align-items-center">
                 <!-- Thumbnail -->
-                <div class="room-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                <div class="room-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/seasideIndex.jpg);"></div>
 
                 <!-- Content -->
                 <div class="room-content">
