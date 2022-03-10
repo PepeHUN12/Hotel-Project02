@@ -86,8 +86,10 @@
 
                 if ($conn->query($sql) === TRUE) {
                     echo "Sikeres regisztáció";
-                    // header('Location: ./siker.php');
-                    } else {
+                    //header("Location: http://localhost/Hotel-Project02/Hotel-Project/");
+                    //exit();
+                } 
+                else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                     // header('Location: ./hiba.php');
                 }

@@ -7,5 +7,6 @@ session_start();
     unset($_SESSION["slastname"]);
     unset($_SESSION["semail"]);
     header("Location: http://localhost/Hotel-Project02/Hotel-Project/");
+    exit();
 ?>
 </html>
