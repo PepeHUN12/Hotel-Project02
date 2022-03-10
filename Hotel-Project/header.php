@@ -45,7 +45,7 @@
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
                                             echo " <a class='nevkiir'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> 
-                                            <a  href='logout.php' style='color:red' class='kijelentkezes'>Kijelentkezés</a>";
+                                            <a class='kijelentkezes' href='logout.php'>Kijelentkezés</a>";
                                         }
                                         else {
                                             echo ' <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a> ';

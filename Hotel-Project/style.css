@@ -2445,4 +2445,12 @@ html .ui-button.ui-state-disabled:active {
         margin-left: 20px; } }
     .comment_area .children .single_comment_area:last-of-type {
       margin-bottom: 0; }
+
+.kijelentkezes{
+  color:red !important;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */
