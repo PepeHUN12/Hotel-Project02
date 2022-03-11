@@ -1,4 +1,5 @@
 <?php 
+ob_start();
 session_start();
 ?>
 <!DOCTYPE html>
@@ -62,7 +63,9 @@ session_start();
                         $_SESSION["semail"] = $result["Email"];
                         $_SESSION["sfirstname"] = $result["FirstName"];
                         $_SESSION["slastname"] = $result["LastName"];
-                        
+                         
+                        header("Location: /Hotel-Project02/Hotel-Project/");
+                        exit();
                         //echo "Sikeres bejelentkezés";
                         //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
 
