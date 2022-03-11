@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Feb 21. 19:20
+-- Létrehozás ideje: 2022. Már 11. 12:31
 -- Kiszolgáló verziója: 10.4.22-MariaDB
 -- PHP verzió: 8.0.14
 
@@ -129,7 +129,8 @@ INSERT INTO `rooms` (`ID`, `Name`, `Price`, `Size`, `Bed`, `Adult`, `Child`, `Se
 -- A tábla indexei `guests`
 --
 ALTER TABLE `guests`
-  ADD PRIMARY KEY (`GuestID`);
+  ADD PRIMARY KEY (`GuestID`),
+  ADD UNIQUE KEY `Email` (`Email`);
 
 --
 -- A tábla indexei `reservations`
