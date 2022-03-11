@@ -1,3 +1,7 @@
+<?php 
+ob_start();
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -86,8 +90,8 @@
 
                 if ($conn->query($sql) === TRUE) {
                     echo "Sikeres regisztáció";
-                    //header("Location: http://localhost/Hotel-Project02/Hotel-Project/");
-                    //exit();
+                    header("Location: /Hotel-Project02/Hotel-Project/");
+                    exit();
                 } 
                 else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
