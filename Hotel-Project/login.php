@@ -94,7 +94,7 @@ session_start();
                                 </div>
                                 
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                    <button type="submit" class="btn roberto-btn mt-15">Bejelenzkezés</button>
+                                    <button type="submit" class="btn roberto-btn mt-15">Bejelentkezés</button>
                                     <a href="registration.php" class="btn roberto-btn mt-15"> Regisztráció </a>
                                 </div>
                                 

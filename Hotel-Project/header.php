@@ -18,7 +18,7 @@
                     <div class="col-6">
                         <div class="top-header-content">
                             <a href="#"><i class="icon_phone"></i> <span>(+36) 30-789-1230</span></a>
-                            <a href="#"><i class="icon_mail"></i> <span>schola@scholaeu.hu</span></a>
+                            <a href="#"><i class="icon_mail"></i> <span>Hotel@hotel.hu</span></a>
                             
 
                             
@@ -95,14 +95,13 @@
                                             <li><a href="./room.php">- Szobák</a></li>
                                             <li><a href="./premium-room.php">- Prémium szobák</a></li>
                                             <li><a href="./about.php">- Rólunk</a></li>
-                                            <li><a href="#">- Valami</a></li>
                                             <li><a href="./contact.php">- Kapcsolat</a></li>
-                                            <li><a href="#">- Dropdown</a>
+                                            <li><a href="#">- Szoba típusok</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="room.php">- Tenger oldali</a></li>
+                                                    <li><a href="room.php">- Családi</a></li>
+                                                    <li><a href="room.php">- Egyszemélyes</a></li>
+                                                    <li><a href="room.php">- Páros szoba</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -115,10 +114,7 @@
                                     <li><a href="./contact.php">Kapcsolat</a></li>
                                 </ul>
 
-                                <!-- Search -->
-                                <div class="search-btn ml-4">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </div>
+                                
 
                                 <!-- Book Now -->
                                 <div class="book-now-btn ml-3 ml-lg-5">
