@@ -97,7 +97,7 @@
 
                                 <!-- Book Now -->
                                 <div class="book-now-btn ml-3 ml-lg-5">
-                                    <a href="room.php">Foglaljon <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="room.php" style="margin-left: 90px;">Foglaljon <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
