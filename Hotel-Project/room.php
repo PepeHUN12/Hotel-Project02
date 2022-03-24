@@ -61,29 +61,208 @@ session_start();
             <div class="row">
                 <div class="col-12 col-lg-8">
                     
+                    <!-- Tenger oldali szoba -->
 
-                <?php
-                include "rooms/seaside.php"
-                ?>
-                 <?php
-                include "rooms/family.php"
-                ?>
-                 <?php
-                include "rooms/premium.php"
-                ?>
-                 <?php
-                include "rooms/couple.php"
-                ?>
-                 <?php
-                include "rooms/single.php"
-                ?>
+                    <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                            <!-- Room Thumbnail -->
+                            <div class="room-thumbnail">
+                                <img src="img/bg-img/43.jpg" alt="">
+                            </div>
 
-                    <!-- Pagination -->
-                    <nav class="roberto-pagination wow fadeInUp mb-100" data-wow-delay="1000ms">
-                        
-                    </nav>
+                            <?php 
+                                include "connection.php";
+                                $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Tenger oldali szoba" LIMIT 1';
+                                $result = $conn->query($sql);
+                                if ($result->num_rows > 0) { 
+                                    while ($row = $result->fetch_assoc()) {
+                                        $price = $row["Price"];
+                                        $size = $row["Size"];
+                                        $bed = $row["Bed"];
+                                        $adult = $row["Adult"];
+                                        $child = $row["Child"];
+                                        $services = $row["Services"];
+                                    }
+                                }
+
+                            ?>
+
+                            <!-- Room Content -->
+                            <div class="room-content">
+                                <h2>Szoba Tenger oldali Kilátással</h2>
+                                <h4> <?php echo "$price" ?>$ <span>/ Nap</span></h4>
+                                <div class="room-feature">
+                                    <h6>méter: <span><?php echo "$size" ?></span></h6>
+                                    <h6>férőhely: <span><?php echo " ".$adult." + ".$child." " ?></span></h6>
+                                    <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
+                                    <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
+                                </div>
+                                <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+
+                        <!-- Pagination -->
+                        <nav class="roberto-pagination wow fadeInUp mb-100" data-wow-delay="1000ms">
+                            
+                        </nav>
+                
+
+                <!-- Csaladi szoba -->
+
+                <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: fadeInUp;">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img\bg-img\csaladiSzoba.jpg" alt="csaladi">
+                        </div>
+
+                        <?php 
+                            include "connection.php";
+                            $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Családi szoba" LIMIT 1';
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) { 
+                                while ($row = $result->fetch_assoc()) {
+                                    $price = $row["Price"];
+                                    $size = $row["Size"];
+                                    $bed = $row["Bed"];
+                                    $adult = $row["Adult"];
+                                    $child = $row["Child"];
+                                    $services = $row["Services"];
+                                }
+                            }
+
+                        ?>
+
+                        <!-- Room Content -->
+                        <div class="room-content">
+                        <h2>Családi Szoba</h2>
+                            <h4><?php echo "$price" ?>$ <span>/ Nap</span></h4>
+                            <div class="room-feature">
+                                <h6>méter: <span><?php echo "$size" ?></span></h6>
+                                <h6>férőhely: <span> <?php echo " ".$adult." + ".$child." " ?></span></h6>
+                                <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
+                                <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
+                            </div>
+                            <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
                 </div>
 
+                <!-- premium szoba -->
+
+                <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img/bg-img/premiumIndex.jpg" alt="">
+                        </div>
+                        <!-- Room Content -->
+
+                        <?php 
+                            include "connection.php";
+                            $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Prémium szoba" LIMIT 1';
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) { 
+                                while ($row = $result->fetch_assoc()) {
+                                    $price = $row["Price"];
+                                    $size = $row["Size"];
+                                    $bed = $row["Bed"];
+                                    $adult = $row["Adult"];
+                                    $child = $row["Child"];
+                                    $services = $row["Services"];
+                                }
+                            }
+
+                        ?>
+
+                        <div class="room-content">
+                            <h2>Prémium Szoba</h2>
+                            <h4> <?php echo "$price" ?>$ <span>/ Nap</span></h4>
+                            <div class="room-feature">
+                                <h6>méter: <span><?php echo "$size" ?></span></h6>
+                                <h6>férőhely: <span><?php echo " ".$adult." + ".$child." " ?></span></h6>
+                                <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
+                                <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
+                            </div>
+                            <a href="premium-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+
+                <!-- paros szoba -->
+
+                <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="900ms" style="visibility: visible; animation-delay: 900ms; animation-name: fadeInUp;">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img/bg-img/couple.jpg" alt="">
+                        </div>
+
+                        <?php 
+                            include "connection.php";
+                            $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Kétszemélyes szoba" LIMIT 1';
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) { 
+                                while ($row = $result->fetch_assoc()) {
+                                    $price = $row["Price"];
+                                    $size = $row["Size"];
+                                    $bed = $row["Bed"];
+                                    $adult = $row["Adult"];
+                                    $child = $row["Child"];
+                                    $services = $row["Services"];
+                                }
+                            }
+
+                        ?>
+
+                        <!-- Room Content -->
+                        <div class="room-content">
+                            <h2>Páros szoba</h2>
+                            <h4> <?php echo "$price" ?>$ <span>/ Nap</span></h4>
+                            <div class="room-feature">
+                                <h6>méter: <span><?php echo "$size" ?></span></h6>
+                                <h6>férőhely: <span><?php echo " ".$adult." + ".$child." " ?></span></h6>
+                                <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
+                                <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
+                            </div>
+                            <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+                
+                <!-- single szoba -->
+
+                <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+                        <!-- Room Thumbnail -->
+                        <div class="room-thumbnail">
+                            <img src="img/bg-img/single-room.jpg" alt="">
+                        </div>
+
+                        <?php 
+                            include "connection.php";
+                            $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Egyszemélyes szoba" LIMIT 1';
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) { 
+                                while ($row = $result->fetch_assoc()) {
+                                    $price = $row["Price"];
+                                    $size = $row["Size"];
+                                    $bed = $row["Bed"];
+                                    $adult = $row["Adult"];
+                                    $child = $row["Child"];
+                                    $services = $row["Services"];
+                                }
+                            }
+
+                        ?>
+
+                        <!-- Room Content -->
+                        <div class="room-content">
+                        <h2>Egyszemélyes Szoba</h2>
+                        <h4> <?php echo "$price" ?>$ <span>/ Nap</span></h4>
+                            <div class="room-feature">
+                                <h6>méter: <span><?php echo "$size" ?></span></h6>
+                                <h6>férőhely: <span><?php echo " ".$adult." + ".$child." " ?></span></h6>
+                                <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
+                                <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
+                            </div>
+                            <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+            </div>                
                 <div class="col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
                     <div class="area mb-100">

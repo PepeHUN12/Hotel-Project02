@@ -1,3 +1,9 @@
+
+<?php 
+session_start();
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -225,6 +231,7 @@
                             </div>
                             <div class="form-group mb-30">
                                 <label for="guests">Vendégek</label>
+<<<<<<< HEAD
                                 <div class="row">
                                     <div class="col-6">
                                         <select name="adults" id="guests" class="form-control">
@@ -264,6 +271,15 @@
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn roberto-btn w-100">Keresés</button>
+=======
+
+                            </div>
+                            <div class="form-group mb-50">
+
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn roberto-btn w-100">Lefoglalás</button>
+>>>>>>> 7bf6b6b04df5425f86cf5ef428bc6ba4d057b590
                             </div>
                         </form>
                     </div>
