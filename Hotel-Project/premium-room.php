@@ -229,57 +229,11 @@ ob_start();
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mb-30">
-                                <label for="guests">Vendégek</label>
-<<<<<<< HEAD
-                                <div class="row">
-                                    <div class="col-6">
-                                        <select name="adults" id="guests" class="form-control">
-                                            <option value="adults">Felnőtt</option>
-                                            <option value="01">1</option>
-                                            <option value="02">2</option>
-                                            <option value="03">3</option>
-                                            <option value="04">4</option>
-                                            <option value="05">5</option>
-                                            <option value="06">6</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6">
-                                        <select name="children" id="children" class="form-control">
-                                            <option value="children">Gyermek</option>
-                                            <option value="00">-</option>
-                                            <option value="01">1</option>
-                                            <option value="02">2</option>
-                                            <option value="03">3</option>
-                                            <option value="04">4</option>
-                                            <option value="05">5</option>
-                                            <option value="06">6</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <div class="form-group mb-50">
-                                <div class="slider-range">
-                                    <div class="range-price">Max ár: $0 - $550</div>
-                                    <br>
-                                    <div data-min="0" data-max="550" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="550" data-label-result="Max Price: ">
-                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
-                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn roberto-btn w-100">Keresés</button>
-=======
-
-                            </div>
-                            <div class="form-group mb-50">
-
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn roberto-btn w-100">Lefoglalás</button>
->>>>>>> 7bf6b6b04df5425f86cf5ef428bc6ba4d057b590
                             </div>
                         </form>
                     </div>
