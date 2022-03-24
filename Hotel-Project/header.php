@@ -96,14 +96,6 @@
                                             <li><a href="./premium-room.php">- Prémium szobák</a></li>
                                             <li><a href="./about.php">- Rólunk</a></li>
                                             <li><a href="./contact.php">- Kapcsolat</a></li>
-                                            <li><a href="#">- Szoba típusok</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="room.php">- Tenger oldali</a></li>
-                                                    <li><a href="room.php">- Családi</a></li>
-                                                    <li><a href="room.php">- Egyszemélyes</a></li>
-                                                    <li><a href="room.php">- Páros szoba</a></li>
-                                                </ul>
-                                            </li>
                                         </ul>
                                     </li>
 

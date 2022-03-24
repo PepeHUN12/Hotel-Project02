@@ -64,7 +64,7 @@
                                         <img src="img/bg-img/49.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/50.jpg" class="d-block w-100" alt="">
+                                        <img src="img/bg-img/premiumIndex.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="img/bg-img/51.jpg" class="d-block w-100" alt="">
@@ -82,7 +82,7 @@
                                         <img src="img/bg-img/49.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="2">
-                                        <img src="img/bg-img/50.jpg" class="d-block w-100" alt="">
+                                        <img src="img/bg-img/premiumIndex.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="3">
                                         <img src="img/bg-img/51.jpg" class="d-block w-100" alt="">
@@ -97,9 +97,9 @@
                         <!-- Room Features -->
                         <div class="room-features-area d-flex flex-wrap mb-50">
                             <h6>Méret: <span>350-425sqf</span></h6>
-                            <h6>Férőhely: <span>Max persion 5</span></h6>
+                            <h6>Férőhely: <span>2 + 2</span></h6>
                             <h6>Ágy: <span>Franciaágy</span></h6>
-                            <h6>Services: <span>Wifi, television, Szauna, Jacuzzi</span></h6>
+                            <h6>Services: <span>Wifi, Tv, Szauna, Jacuzzi</span></h6>
                         </div>
 
                         <p>A Kanári-szigetek legnagyobbika, Tenerife igazi turistaparadicsom: fantasztikus klímájának köszönhetően egész évben tart itt a szezon. A legtöbb turista a nap és a tengerpart kedvéért érkezik, és a sziget 269 km. hosszú, változatos partszakaszain minden lehetőség adott is egy tökéletes vízparti nyaraláshoz. Az örök tavasz szigetének is nevezett Tenerife azonban a tenger mellett számtalan egyéb kikapcsolódási lehetőséget nyújt. A családosok biztosan élvezni fogják a Siam Parkot, amelyet többször is Európa legjobb vízi vidámparkjának választottak, a híres majomparkot és a pingvineket, delfineket, fókákat és bálnákat szerepeltető Loro Parkot. Aki pedig egy-egy napra hajlandó maga mögött hagyni a partok kényelmét, életre szóló emlékeket szerezhet a vulkanikus sziget különleges túraútvonalain. Mászd meg a 3718 méteres Teide vulkánt, csodáld meg a Teide Nemzeti Park pazar sziklaformáit, a lávakitörések lenyűgöző természeti lenyomatait, túrázz szurdokban vagy kajakozz óriás sziklafalak között – az életre szóló élmény garantált.</p>
