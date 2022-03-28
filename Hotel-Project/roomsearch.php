@@ -1,11 +1,6 @@
 <?php 
 session_start();
 ob_start();
-
-unset($_SESSION["fromdate"]);
-unset($_SESSION["todate"]);
-unset($_SESSION["adult"]);
-unset($_SESSION["children"]); 
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -90,7 +85,7 @@ unset($_SESSION["children"]);
                                         $services = $row["Services"];
                                     }
                                 }
-
+                                $conn->close();
                             ?>
 
                             <!-- Room Content -->
@@ -104,12 +99,36 @@ unset($_SESSION["children"]);
                                     <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
                                 </div>
 
+                                
                                 <?php 
+                                //elérhetőség vizsgálat
+                                $fromdate = $_SESSION["fromdate"];
+                                $todate = $_SESSION["todate"];
+                                    include "connection.php";
+                                    $hiba = true;
+                                    for ($x = 11; $x <= 15; $x++) {
+                                        $sql = "SELECT * From reservations WHERE RoomID = ".$x." AND '".$fromdate."' BETWEEN FromDate AND ToDate AND '".$todate."' BETWEEN FromDate AND ToDate";
+                                        $result = $conn->query($sql);
+                                        //echo "<script type='text/javascript'>alert('$result');</script>";
+                                        if ($result->num_rows < 1) {
+                                            $hiba = false;
+                                            $_SESSION["searoomid"] = $x;
+                                            $_SESSION["fromdate1"] = $fromdate;
+                                            $_SESSION["todate1"] = $todate;
+                                            echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                            break;
+                                            //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
+                                            //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                            //}
+                                            
+                                        }
+                                        
+                                    }
+                                    if ($hiba){
+                                        echo'Nem elérhető';
+                                    }
 
-                                
                                 ?>
-
-                                
                             </div>
                         </div>
 
@@ -155,7 +174,7 @@ unset($_SESSION["children"]);
                                 <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
                                 <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
                             </div>
-                            
+                            <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                 </div>
 
@@ -195,7 +214,7 @@ unset($_SESSION["children"]);
                                 <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
                                 <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
                             </div>
-                            
+                            <a href="premium-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                 </div>
 
@@ -234,7 +253,7 @@ unset($_SESSION["children"]);
                                 <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
                                 <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
                             </div>
-                            
+                            <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                 </div>
                 
@@ -273,23 +292,23 @@ unset($_SESSION["children"]);
                                 <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
                                 <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
                             </div>
-                            
+                            <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                 </div>
             </div>                
                 <div class="col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
                     <div class="area mb-100">
-                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                        <form action="#" method="post">
                             <div class="form-group mb-30">
                                 <label for="checkInDate">Dátum</label>
                                 <div>
                                     <div class="row no-gutters">
                                         <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkInDate" name="fromdate" placeholder="Bejelentkezés">
+                                            <input type="date" class="input-small form-control" id="checkInDate" name="checkInDate" placeholder="Bejelentkezés">
                                         </div>
                                         <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkOut" name="todate" placeholder="Kijelentkezés">
+                                            <input type="date" class="input-small form-control" id="checkOut" name="checkOut" placeholder="Kijelentkezés">
                                         </div>
                                     </div>
                                 </div>
@@ -342,17 +361,6 @@ unset($_SESSION["children"]);
             </div>
         </div>
     </div>
-
-    <?php  
-        if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-            $_SESSION["fromdate"] = $_POST["fromdate"];
-            $_SESSION["todate"] = $_POST["todate"];
-            $_SESSION["adult"] = $_POST["adults"];
-            $_SESSION["children"] = $_POST["children"];
-
-            header("Location: http://localhost/Hotel-Project02/Hotel-Project/roomsearch.php");
-        }
-    ?>
     <!-- Rooms Area End -->
 
     <!-- Footer Start-->
