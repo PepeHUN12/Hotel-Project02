@@ -1,6 +1,7 @@
 <?php 
 session_start();
 ob_start();
+$_SESSION["roomname"] = "Prémium szoba";
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -206,7 +207,7 @@ ob_start();
 
                 <?php 
                 include "connection.php";
-
+                    // ID nem egyezik
                    $getidsql = "SELECT ReservationID FROM Reservations";
                    do {
                         $idcheck = 0;
@@ -230,15 +231,17 @@ ob_start();
 
 
                     //$reservationid = 5;
-                    $guestid = $_SESSION["GuestID"];
+                    $guestid = $_SESSION["guestid"];
                     $roomid = 1;
+                    $roomname = $_SESSION["roomname"];
 
-                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID) VALUES (".$reservationid.", ".$guestid.", '".$fromdate."', '".$todate."', ".$roomid." )";
+                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID, RoomName) VALUES (".$reservationid.", ".$guestid.", '".$fromdate."', '".$todate."', ".$roomid.", '".$roomname."' )";
 
         //            echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
                    if ($conn->query($sql) === TRUE) {
-                    echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
-                        //exit();
+                    //echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
+                    //exit();
+                    echo "Sikeres foglalás";
                     } 
                     else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
