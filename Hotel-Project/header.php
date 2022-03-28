@@ -1,15 +1,7 @@
 <!-- Header Area Start -->
-    <header class="header-area">
-        <!-- Search Form -->
-        <div class="search-form d-flex align-items-center">
-            <div class="container">
-                <form action="index.php" method="get">
-                    <input type="search" name="search-form-input" id="searchFormInput" placeholder="Keresés ...">
-                    <button type="submit"><i class="icon_search"></i></button>
-                </form>
-            </div>
-        </div>
 
+    <header class="header-area">
+       
         <!-- Top Header Area Start -->
         <div class="top-header-area">
             <div class="container">
@@ -19,10 +11,6 @@
                         <div class="top-header-content">
                             <a href="#"><i class="icon_phone"></i> <span>(+36) 30-789-1230</span></a>
                             <a href="#"><i class="icon_mail"></i> <span>Hotel@hotel.hu</span></a>
-                            
-
-                            
-
                         </div>
                     </div>
 
@@ -33,7 +21,8 @@
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
+                                <span></span>
+                            </div>
                                 <?php 
                                     if (isset($_SESSION["semail"])) {
                                         //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
@@ -45,15 +34,15 @@
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
                                             echo " <a class='nevkiir'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> 
-                                            <a class='kijelentkezes' href='logout.php'>Kijelentkezés</a>";
+                                            <a href='logout.php'><span style='color:red;'>Kijelentkezés</span><i> ❌</i></a>";
                                         }
                                         else {
-                                            echo ' <a style="color:red" name="log/reg" href="login.php">Bejelentkezés</a> ';
+                                            echo ' <a name="log/reg" href="login.php"><span style="color:green;">Bejelentkezés</span><i> ✔️</i></a> ';
                                         }
-                                        
+                                         
                                         $conn->close();
                                 ?>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -65,9 +54,9 @@
         <!-- Main Header Start -->
         <div class="main-header-area">
             <div class="classy-nav-container breakpoint-off">
-                <div class="container">
+                <div class="container sajatmenu">
                     <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between" id="robertoNav">
+                    <nav class="classy-navbar" id="robertoNav" style="display:flex; flex-wrap: nowrap;!important;">
 
                         <!-- Logo -->
                         <a class="nav-brand" href="index.php"><img src="./img/core-img/schola-gimi.jpeg" alt=""></a>
@@ -89,19 +78,9 @@
                                     <li class="active"><a href="./index.php">Főoldal</a></li>
                                     <li><a href="./room.php">Szobák</a></li>
                                     <li><a href="./about.php">Rólunk</a></li>
-                                    <li><a href="#">Oldalak</a>
-                                        <ul class="dropdown">
-                                            <li><a href="./index.php">- Főoldal</a></li>
-                                            <li><a href="./room.php">- Szobák</a></li>
-                                            <li><a href="./premium-room.php">- Prémium szobák</a></li>
-                                            <li><a href="./about.php">- Rólunk</a></li>
-                                            <li><a href="./contact.php">- Kapcsolat</a></li>
-                                        </ul>
-                                    </li>
-
                                 <!--  <li><a href="./blog.php">hírek</a></li>-->
 
-                                    <li><a href="#">valami</a></li>
+                                    <li><a href="premium-room.php">Prémium szobák</a></li>
 
                                     <li><a href="./contact.php">Kapcsolat</a></li>
                                 </ul>

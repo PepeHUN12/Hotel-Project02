@@ -528,7 +528,7 @@ input:focus {
           margin-right: 15px; } }
       .top-header-area .top-header-content .top-social-area a:hover, .top-header-area .top-header-content .top-social-area a:focus {
         color: #1cc3b2; }
-
+ 
 .classy-nav-container {
   background-color: transparent;
   padding: 0; }
@@ -2446,9 +2446,6 @@ html .ui-button.ui-state-disabled:active {
     .comment_area .children .single_comment_area:last-of-type {
       margin-bottom: 0; }
 
-.kijelentkezes{
-  color:red !important;
-}
 
 
 

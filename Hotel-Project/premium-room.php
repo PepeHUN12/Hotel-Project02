@@ -63,16 +63,16 @@ $_SESSION["roomname"] = "Prémium szoba";
                             <div id="room-thumbnail--slide" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="img/bg-img/48.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep1.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/49.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep2.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="img/bg-img/premiumIndex.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/51.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep3.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="img/bg-img/52.jpg" class="d-block w-100" alt="">
@@ -81,16 +81,16 @@ $_SESSION["roomname"] = "Prémium szoba";
 
                                 <ol class="carousel-indicators">
                                     <li data-target="#room-thumbnail--slide" data-slide-to="0" class="active">
-                                        <img src="img/bg-img/48.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep1.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="1">
-                                        <img src="img/bg-img/49.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep2.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="2">
                                         <img src="img/bg-img/premiumIndex.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="3">
-                                        <img src="img/bg-img/51.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep3.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="4">
                                         <img src="img/bg-img/52.jpg" class="d-block w-100" alt="">
@@ -110,15 +110,9 @@ $_SESSION["roomname"] = "Prémium szoba";
                         <p>A Kanári-szigetek legnagyobbika, Tenerife igazi turistaparadicsom: fantasztikus klímájának köszönhetően egész évben tart itt a szezon. A legtöbb turista a nap és a tengerpart kedvéért érkezik, és a sziget 269 km. hosszú, változatos partszakaszain minden lehetőség adott is egy tökéletes vízparti nyaraláshoz. Az örök tavasz szigetének is nevezett Tenerife azonban a tenger mellett számtalan egyéb kikapcsolódási lehetőséget nyújt. A családosok biztosan élvezni fogják a Siam Parkot, amelyet többször is Európa legjobb vízi vidámparkjának választottak, a híres majomparkot és a pingvineket, delfineket, fókákat és bálnákat szerepeltető Loro Parkot. Aki pedig egy-egy napra hajlandó maga mögött hagyni a partok kényelmét, életre szóló emlékeket szerezhet a vulkanikus sziget különleges túraútvonalain. Mászd meg a 3718 méteres Teide vulkánt, csodáld meg a Teide Nemzeti Park pazar sziklaformáit, a lávakitörések lenyűgöző természeti lenyomatait, túrázz szurdokban vagy kajakozz óriás sziklafalak között – az életre szóló élmény garantált.</p>
 
                         <ul>
-                            <li><i class="fa fa-check"></i> Mauris molestie lectus in irdiet auctor.</li>
-                            <li><i class="fa fa-check"></i> Dictum purus at blandit molestie.</li>
-                            <li><i class="fa fa-check"></i> Neque non fermentum suscipit.</li>
-                            <li><i class="fa fa-check"></i> Donec id dui ac massa malesuada.</li>
-                            <li><i class="fa fa-check"></i> In sit amet sapien quis orci maximus.</li>
-                            <li><i class="fa fa-check"></i> Vestibulum rutrum diam vel eros tristique.</li>
+                            <li><i class="fa fa-check"></i> Szauna és Jacuzzi kolátlan használata.</li>
+                            <li><i class="fa fa-check"></i> Masszázs.</li>   
                         </ul>
-
-                        <p>Every time I hail a cab in New York City or wait for one at the airports, I hope I’ll be lucky enough to get one that’s halfway decent and that the driver actually speaks English. I have spent many anxious moments wondering if I ever get to my destination. Or whether I’d get ripped off. Even if all goes well, I can’t say I can remember many rides in New York cabs that were very pleasant. And given how much they cost by now, going with a limo makes ever more sense.</p>
                     </div>
 
                     <!-- Room Service -->
@@ -148,7 +142,7 @@ $_SESSION["roomname"] = "Prémium szoba";
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
                                         <span>27 Aug 2021</span>
-                                        <h6>Brandon Kelley</h6>
+                                        <h6>Füty Imre</h6>
                                     </div>
                                     <div class="reviwer-rating">
                                         <i class="fa fa-star"></i>
@@ -158,7 +152,7 @@ $_SESSION["roomname"] = "Prémium szoba";
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                <p>Szuper szállás nagyszerű személyzette.</p>
                             </div>
                         </div>
 
@@ -171,7 +165,7 @@ $_SESSION["roomname"] = "Prémium szoba";
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
                                         <span>27 Aug 2019</span>
-                                        <h6>Sounron Masha</h6>
+                                        <h6>Har Mónika</h6>
                                     </div>
                                     <div class="reviwer-rating">
                                         <i class="fa fa-star"></i>
@@ -181,7 +175,7 @@ $_SESSION["roomname"] = "Prémium szoba";
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                <p>Mindenkinek ajánlom. Jövőre tuti vissza jövünk!!!</p>
                             </div>
                         </div>
 
@@ -194,7 +188,7 @@ $_SESSION["roomname"] = "Prémium szoba";
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
                                         <span>27 Aug 2019</span>
-                                        <h6>Amada Lyly</h6>
+                                        <h6>Dil Emma</h6>
                                     </div>
                                     <div class="reviwer-rating">
                                         <i class="fa fa-star"></i>
@@ -204,7 +198,7 @@ $_SESSION["roomname"] = "Prémium szoba";
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam  modi tempora.</p>
+                                <p>Nagyszerű masszázs, szuper kaják. Izgalmas programok. Nagyszerű kilátás!!</p>
                             </div>
                         </div>
 
@@ -277,7 +271,8 @@ $_SESSION["roomname"] = "Prémium szoba";
                                 </div>
                             </div>
                             <div class="form-group mb-30">
-                                <label for="guests">Vendégek</label>
+                                <label for="total">Végösszeg</label>
+                                <h4 class="room-price"> 550$ +napok száma</h4>
 
                             </div>
                             <div class="form-group mb-50">
