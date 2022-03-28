@@ -43,8 +43,9 @@ session_start();
         $confirm = "0";
         $guestid = $firstname = $lastname = $email = $phone = $password = $passwordcon = "";
         $getidsql = "SELECT GuestID FROM guests";
-        $idcheck = 0;
+        
         do {
+            $idcheck = 0;
             $getid = $conn->query($getidsql);
             $guestid = rand(1,999);
             while ($result = $getid->fetch_assoc()) {

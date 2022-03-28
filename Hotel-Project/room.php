@@ -72,6 +72,7 @@ session_start();
                             <?php 
                                 include "connection.php";
                                 $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Tenger oldali szoba" LIMIT 1';
+                                
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) { 
                                     while ($row = $result->fetch_assoc()) {
@@ -96,6 +97,12 @@ session_start();
                                     <h6>Ágy: <span><?php echo "$bed" ?></span></h6>
                                     <h6>Szervíz: <span><?php echo "$services" ?></span></h6>
                                 </div>
+
+                                <?php 
+
+                                
+                                ?>
+
                                 <a href="#" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
@@ -158,6 +165,7 @@ session_start();
                         <?php 
                             include "connection.php";
                             $sql = 'SELECT Price, Size, Bed, Adult,Child, Services FROM rooms WHERE Name = "Prémium szoba" LIMIT 1';
+                            
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) { 
                                 while ($row = $result->fetch_assoc()) {

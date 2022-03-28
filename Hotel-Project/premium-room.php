@@ -1,9 +1,7 @@
-
 <?php 
 session_start();
 ob_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -211,26 +209,76 @@ ob_start();
 
                     </div>
                 </div>
+
+                <?php 
+                include "connection.php";
+
+                   $getidsql = "SELECT ReservationID FROM Reservations";
+                   do {
+                        $idcheck = 0;
+                        $getid = $conn->query($getidsql);
+                        $reservationid = rand(1,999);
+                        if ($getid->num_rows > 0) {
+                            while ($result = $getid->fetch_assoc()) {
+                                $check = $result["ReservationID"];
+                                if ($check == $reservationid) {
+                                    $idcheck++;
+                                }
+                            }
+                        }
+            
+                    } while ($idcheck != 0);
+
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $fromdate = $_POST["fromdate"];
+                    $todate = $_POST["todate"];
+                    
+
+
+                    //$reservationid = 5;
+                    $guestid = $_SESSION["GuestID"];
+                    $roomid = 1;
+
+                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID) VALUES (".$reservationid.", ".$guestid.", '".$fromdate."', '".$todate."', ".$roomid." )";
+
+        //            echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
+                   if ($conn->query($sql) === TRUE) {
+                    echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
+                        //exit();
+                    } 
+                    else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                        // header('Location: ./hiba.php');
+                    }
+        
+                    $conn->close();
+                }
+
+                ?>
                     
                 <div class="col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
                     <div class="hotel-reservation--area mb-100">
-                    <form action="#" method="post">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                             <div class="form-group mb-30">
                                 <label for="checkInDate">Dátum</label>
                                 <div>
                                     <div class="row no-gutters">
                                         <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkInDate" name="checkInDate" placeholder="Bejelentkezés">
+                                            <input type="date" class="input-small form-control" id="checkInDate" name="fromdate" placeholder="Bejelentkezés">
                                         </div>
                                         <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkOut" name="checkOut" placeholder="Kijelentkezés">
+                                            <input type="date" class="input-small form-control" id="checkOut" name="todate" placeholder="Kijelentkezés">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                           
+                            <div class="form-group mb-30">
+                                <label for="guests">Vendégek</label>
+
+                            </div>
                             <div class="form-group mb-50">
+
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn roberto-btn w-100">Lefoglalás</button>

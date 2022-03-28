@@ -55,11 +55,11 @@ session_start();
         $getemail = $_POST["getemail"];
         $getpassword = $_POST["getpassword"];
 
-        $sql = "SELECT Email, Password, FirstName, LastName FROM Guests WHERE Email = '".$getemail."' and Password = '".$getpassword."' LIMIT 1";
+        $sql = "SELECT GuestID, Email, Password, FirstName, LastName FROM Guests WHERE Email = '".$getemail."' and Password = '".$getpassword."' LIMIT 1";
         $getlogin = $conn->query($sql);
         if ($getlogin->num_rows > 0) {
             while ($result = $getlogin->fetch_assoc()) {
-
+                        $_SESSION["guestid"] = $result["GuestID"];
                         $_SESSION["semail"] = $result["Email"];
                         $_SESSION["sfirstname"] = $result["FirstName"];
                         $_SESSION["slastname"] = $result["LastName"];

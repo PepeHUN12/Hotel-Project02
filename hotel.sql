@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Már 11. 12:31
+-- Létrehozás ideje: 2022. Már 24. 14:15
 -- Kiszolgáló verziója: 10.4.22-MariaDB
--- PHP verzió: 8.0.14
+-- PHP verzió: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,6 +41,7 @@ CREATE TABLE `guests` (
 --
 
 INSERT INTO `guests` (`GuestID`, `FirstName`, `LastName`, `PhoneNumber`, `Email`, `Password`) VALUES
+(239, 'teszt', 'teszt', 2147483647, 'teszt@gmail.com', 'asd123'),
 (782, 'Péter', 'Patyi', 12345, 'petike@gmail.com', 'asd'),
 (860, 'Zoltán', 'Lipovniczky ', 12345, 'zoli@gmail.com', 'asd'),
 (958, 'Olivér ', 'Szabó', 12345, 'oliver@gmail.com', 'asd');
@@ -58,6 +59,16 @@ CREATE TABLE `reservations` (
   `ToDate` date DEFAULT NULL,
   `RoomID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- A tábla adatainak kiíratása `reservations`
+--
+
+INSERT INTO `reservations` (`ReservationID`, `GuestID`, `FromDate`, `ToDate`, `RoomID`) VALUES
+(5, 5, '2000-07-21', '2000-07-30', 5),
+(58, 5, '0000-00-00', '0000-00-00', 1),
+(573, 5, '2022-03-30', '2022-03-31', 1),
+(903, 5, '0000-00-00', '0000-00-00', 1);
 
 -- --------------------------------------------------------
 

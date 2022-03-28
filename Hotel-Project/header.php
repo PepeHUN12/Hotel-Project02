@@ -65,9 +65,9 @@
         <!-- Main Header Start -->
         <div class="main-header-area">
             <div class="classy-nav-container breakpoint-off">
-                <div class="container sajatmenu">
+                <div class="container">
                     <!-- Classy Menu -->
-                    <nav class="classy-navbar" id="robertoNav" style="display:flex; flex-wrap: nowrap;!important;">
+                    <nav class="classy-navbar justify-content-between" id="robertoNav">
 
                         <!-- Logo -->
                         <a class="nav-brand" href="index.php"><img src="./img/core-img/schola-gimi.jpeg" alt=""></a>
@@ -89,15 +89,28 @@
                                     <li class="active"><a href="./index.php">Főoldal</a></li>
                                     <li><a href="./room.php">Szobák</a></li>
                                     <li><a href="./about.php">Rólunk</a></li>
+                                    <li><a href="#">Oldalak</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./index.php">- Főoldal</a></li>
+                                            <li><a href="./room.php">- Szobák</a></li>
+                                            <li><a href="./premium-room.php">- Prémium szobák</a></li>
+                                            <li><a href="./about.php">- Rólunk</a></li>
+                                            <li><a href="./contact.php">- Kapcsolat</a></li>
+                                        </ul>
+                                    </li>
+
+                                <!--  <li><a href="./blog.php">hírek</a></li>-->
+
+                                    <li><a href="#">valami</a></li>
+
                                     <li><a href="./contact.php">Kapcsolat</a></li>
-                                    <li><a href="./premium-room.php">Prémium szoba</a></li>
                                 </ul>
 
                                 
 
                                 <!-- Book Now -->
                                 <div class="book-now-btn ml-3 ml-lg-5">
-                                    <a href="room.php" style="margin-left: 90px;">Foglaljon <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="room.php">Foglaljon <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
