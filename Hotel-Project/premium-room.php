@@ -1,7 +1,6 @@
-<?php 
+<?php
 session_start();
 ob_start();
-$_SESSION["roomname"] = "Prémium szoba";
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -31,7 +30,7 @@ $_SESSION["roomname"] = "Prémium szoba";
     <!-- /Preloader -->
 
     <!-- Header Area Start -->
-    <?php 
+    <?php
     include "header.php";
     ?>
     <!-- Header Area End -->
@@ -111,7 +110,7 @@ $_SESSION["roomname"] = "Prémium szoba";
 
                         <ul>
                             <li><i class="fa fa-check"></i> Szauna és Jacuzzi kolátlan használata.</li>
-                            <li><i class="fa fa-check"></i> Masszázs.</li>   
+                            <li><i class="fa fa-check"></i> Masszázs.</li>
                         </ul>
                     </div>
 
@@ -205,70 +204,61 @@ $_SESSION["roomname"] = "Prémium szoba";
                     </div>
                 </div>
 
-                <?php 
+                <?php
                 include "connection.php";
-                    // ID nem egyezik
-                   $getidsql = "SELECT ReservationID FROM Reservations";
-                   do {
-                        $idcheck = 0;
-                        $getid = $conn->query($getidsql);
-                        $reservationid = rand(1,999);
-                        if ($getid->num_rows > 0) {
-                            while ($result = $getid->fetch_assoc()) {
-                                $check = $result["ReservationID"];
-                                if ($check == $reservationid) {
-                                    $idcheck++;
-                                }
+                // ID nem egyezik
+                $getidsql = "SELECT ReservationID FROM Reservations";
+                do {
+                    $idcheck = 0;
+                    $getid = $conn->query($getidsql);
+                    $reservationid = rand(1, 999);
+                    if ($getid->num_rows > 0) {
+                        while ($result = $getid->fetch_assoc()) {
+                            $check = $result["ReservationID"];
+                            if ($check == $reservationid) {
+                                $idcheck++;
                             }
                         }
-            
-                    } while ($idcheck != 0);
+                    }
+                    else {
+                        $reservationid = rand(1, 999);
+                    }
+                } while ($idcheck != 0);
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $fromdate = $_POST["fromdate"];
-                    $todate = $_POST["todate"];
-                    
-
-
-                    //$reservationid = 5;
+                    $fromdate = $_SESSION["fromdate"];
+                    $todate = $_SESSION["todate"];
                     $guestid = $_SESSION["guestid"];
-                    $roomid = 1;
-                    $roomname = $_SESSION["roomname"];
+                    $roomid = $_SESSION["premiumroomid"];
+                    $roomname = "Prémium szoba";
 
-                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID, RoomName) VALUES (".$reservationid.", ".$guestid.", '".$fromdate."', '".$todate."', ".$roomid.", '".$roomname."' )";
+                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID, RoomName) VALUES (" . $reservationid . ", " . $guestid . ", '" . $fromdate . "', '" . $todate . "', " . $roomid . ", '" . $roomname . "' )";
 
-        //            echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
-                   if ($conn->query($sql) === TRUE) {
-                    //echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
-                    //exit();
-                    echo "Sikeres foglalás";
-                    } 
-                    else {
+                    //            echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
+                    if ($conn->query($sql) === TRUE) {
+                        //echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
+                        //exit();
+                        echo "Sikeres foglalás";
+                    } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                         // header('Location: ./hiba.php');
                     }
-        
+
                     $conn->close();
                 }
 
                 ?>
-                    
+
                 <div class="col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
                     <div class="hotel-reservation--area mb-100">
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                             <div class="form-group mb-30">
-                                <label for="checkInDate">Dátum</label>
-                                <div>
-                                    <div class="row no-gutters">
-                                        <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkInDate" name="fromdate" placeholder="Bejelentkezés">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkOut" name="todate" placeholder="Kijelentkezés">
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php
+                                $fromdate = $_SESSION["fromdate"];
+                                $todate = $_SESSION["todate"];
+                                echo " Érkezés: " . $fromdate . " <br>Távozás: " . $todate . " ";
+                                ?>
                             </div>
                             <div class="form-group mb-30">
                                 <label for="total">Végösszeg</label>
@@ -288,10 +278,10 @@ $_SESSION["roomname"] = "Prémium szoba";
         </div>
     </div>
     <!-- Rooms Area End -->
- <!-- Footer Start-->
-        <?php
-        include "footer.php";
-        ?>
+    <!-- Footer Start-->
+    <?php
+    include "footer.php";
+    ?>
     <!-- Footer End-->
 
     <!-- **** All JS Files ***** -->
