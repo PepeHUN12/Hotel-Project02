@@ -70,10 +70,8 @@ session_start();
                         <h2>20 év tapasztalat</h2>
                     </div>
                     <div class="about-content mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id
-                            est laborum. Sed ut perspiciatis unde omnis iste.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id
-                            est laborum. Sed ut perspiciatis unde omnis iste. Lorem Ipsum available.</p>
+                        <p>A Schola Hotel ideális helyen, Tenerife déli részén található, kiváló, tengerparti helyen, közvetlen hozzáféréssel a tengerparti sétányhoz. Az egész évben átlagosan 23°C-os hőmérséklettel és a sziget természeti szépségével az üdülőhely ideális a feltöltődni vágyó utazók számára.</p>
+                        <p> A 75 szoba és lakosztály saját terasszal és mindennel rendelkezik, ami a tökéletes tartózkodáshoz szükséges.</p> <p> Négy étterem és két bár kielégíti a vendégek vágyait. Az Eutonos fürdő a nyugalom oázisa, mely kifinomult létesítményekkel maximalizálja a test és a lélek jólétét. Amíg a felnőttek pihennek, a gyerekek a „Guanchito Kid's Clubban” vagy a „Magma Clubban” szórakozhatnak. Felhívjuk figyelmét, hogy egyes létesítményeink átmenetileg zárva tarthatnak. További részletekért olvassa el a COVID-19-frissítéseket és a várható eseményeket szállodánkban.</p>
                         <img src="img/core-img/signature.png" alt="">
                     </div>
                 </div>
@@ -90,8 +88,7 @@ session_start();
                 <div class="col-12 col-md-6">
                     <!-- Section Heading -->
                     <div class="section-heading text-center white wow fadeInUp" data-wow-delay="100ms">
-                        <h6>Ultimate Solutions</h6>
-                        <h2>Our Hotel &amp; Room</h2>
+                        <h2>Hotel &amp; Szobák</h2>
                     </div>
                     <div class="video-content-area mt-100 wow fadeInUp" data-wow-delay="500ms">
                         <a href="https://www.youtube.com/watch?v=2up_Eq6r6Ko" class="video-play-btn"><i
@@ -110,8 +107,7 @@ session_start();
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h6>Ultimate Solutions</h6>
-                        <h2>Our Hotel &amp; Room</h2>
+                        <h6>Programok</h6>
                     </div>
                 </div>
             </div>
@@ -122,7 +118,7 @@ session_start();
                     <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
                         <img src="img/bg-img/21.jpg" alt="">
                         <div class="service-title d-flex align-items-center justify-content-center">
-                            <h5>Restaurant &amp; Bar</h5>
+                            <h5>Étterem &amp; Bár</h5>
                         </div>
                     </div>
                 </div>
@@ -140,7 +136,7 @@ session_start();
                     <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
                         <img src="img/bg-img/23.jpg" alt="">
                         <div class="service-title d-flex align-items-center justify-content-center">
-                            <h5>Pool &amp; Party</h5>
+                            <h5>Medencék &amp; És Italbár</h5>
                         </div>
                     </div>
                 </div>

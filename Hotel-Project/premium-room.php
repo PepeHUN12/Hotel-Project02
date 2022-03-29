@@ -74,7 +74,7 @@ ob_start();
                                         <img src="img/premiumszoba/kep3.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/52.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep4.jpg" class="d-block w-100" alt="">
                                     </div>
                                 </div>
 
@@ -92,7 +92,7 @@ ob_start();
                                         <img src="img/premiumszoba/kep3.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="4">
-                                        <img src="img/bg-img/52.jpg" class="d-block w-100" alt="">
+                                        <img src="img/premiumszoba/kep4.jpg" class="d-block w-100" alt="">
                                     </li>
                                 </ol>
                             </div>
