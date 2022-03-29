@@ -14,7 +14,7 @@ ob_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Schola - Hotel | Prémium Szobák</title>
+    <title>Schola - Hotel | Szoba tenger oldali kilátással</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/schola.png">
@@ -44,7 +44,7 @@ ob_start();
                 <div class="col-12">
                     <div class="breadcrumb-content d-flex align-items-center justify-content-between pb-5">
                         <h2 class="room-title">Tengerre nyíló kilátás</h2>
-                        <h2 class="room-price">$550 <span>/Nap</span></h2>
+                        <h2 class="room-price">$300 <span>/Nap</span></h2>
                     </div>
                 </div>
             </div>
@@ -100,26 +100,16 @@ ob_start();
                             </div>
                         </div>
 
-                        <!-- Room Features -->
-                        <div class="room-features-area d-flex flex-wrap mb-50">
+                         <!-- Room Features -->
+                         <div class="room-features-area d-flex flex-wrap mb-50">
                             <h6>Méret: <span>350-425sqf</span></h6>
                             <h6>Férőhely: <span>2 + 2</span></h6>
                             <h6>Ágy: <span>Franciaágy</span></h6>
-                            <h6>Services: <span>Wifi, Tv, Szauna, Jacuzzi</span></h6>
+                            <h6>Services: <span>Wifi, Tv</span></h6>
                         </div>
 
                         <p>A Kanári-szigetek legnagyobbika, Tenerife igazi turistaparadicsom: fantasztikus klímájának köszönhetően egész évben tart itt a szezon. A legtöbb turista a nap és a tengerpart kedvéért érkezik, és a sziget 269 km. hosszú, változatos partszakaszain minden lehetőség adott is egy tökéletes vízparti nyaraláshoz. Az örök tavasz szigetének is nevezett Tenerife azonban a tenger mellett számtalan egyéb kikapcsolódási lehetőséget nyújt. A családosok biztosan élvezni fogják a Siam Parkot, amelyet többször is Európa legjobb vízi vidámparkjának választottak, a híres majomparkot és a pingvineket, delfineket, fókákat és bálnákat szerepeltető Loro Parkot. Aki pedig egy-egy napra hajlandó maga mögött hagyni a partok kényelmét, életre szóló emlékeket szerezhet a vulkanikus sziget különleges túraútvonalain. Mászd meg a 3718 méteres Teide vulkánt, csodáld meg a Teide Nemzeti Park pazar sziklaformáit, a lávakitörések lenyűgöző természeti lenyomatait, túrázz szurdokban vagy kajakozz óriás sziklafalak között – az életre szóló élmény garantált.</p>
 
-                        <ul>
-                            <li><i class="fa fa-check"></i> Mauris molestie lectus in irdiet auctor.</li>
-                            <li><i class="fa fa-check"></i> Dictum purus at blandit molestie.</li>
-                            <li><i class="fa fa-check"></i> Neque non fermentum suscipit.</li>
-                            <li><i class="fa fa-check"></i> Donec id dui ac massa malesuada.</li>
-                            <li><i class="fa fa-check"></i> In sit amet sapien quis orci maximus.</li>
-                            <li><i class="fa fa-check"></i> Vestibulum rutrum diam vel eros tristique.</li>
-                        </ul>
-
-                        <p>Every time I hail a cab in New York City or wait for one at the airports, I hope I’ll be lucky enough to get one that’s halfway decent and that the driver actually speaks English. I have spent many anxious moments wondering if I ever get to my destination. Or whether I’d get ripped off. Even if all goes well, I can’t say I can remember many rides in New York cabs that were very pleasant. And given how much they cost by now, going with a limo makes ever more sense.</p>
                     </div>
 
                     <!-- Room Service -->
@@ -128,7 +118,6 @@ ob_start();
 
                         <ul>
                             <li><img src="img/core-img/icon1.png" alt=""> Klíma</li>
-                            <li><img src="img/core-img/icon2.png" alt=""> Ingyen italok</li>
                             <li><img src="img/core-img/icon3.png" alt=""> Étterem</li>
                             <li><img src="img/core-img/icon4.png" alt=""> Okos TV</li>
                             <li><img src="img/core-img/icon5.png" alt=""> Korlátlan Wifi</li>
@@ -149,7 +138,7 @@ ob_start();
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
                                         <span>27 Aug 2021</span>
-                                        <h6>Brandon Kelley</h6>
+                                        <h6>Füty Imre</h6>
                                     </div>
                                     <div class="reviwer-rating">
                                         <i class="fa fa-star"></i>
@@ -159,7 +148,7 @@ ob_start();
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                <p>Szuper szállás, nagyszerű személyzettel.</p>
                             </div>
                         </div>
 
@@ -171,8 +160,8 @@ ob_start();
                             <div class="reviwer-content">
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
-                                        <span>27 Aug 2019</span>
-                                        <h6>Sounron Masha</h6>
+                                        <span>4 Jun 2019</span>
+                                        <h6>Har Mónika</h6>
                                     </div>
                                     <div class="reviwer-rating">
                                         <i class="fa fa-star"></i>
@@ -182,7 +171,7 @@ ob_start();
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                <p>Mindenkinek ajánlom. Jövőre tuti vissza jövünk!!!</p>
                             </div>
                         </div>
 
@@ -194,8 +183,8 @@ ob_start();
                             <div class="reviwer-content">
                                 <div class="reviwer-title-rating d-flex align-items-center justify-content-between">
                                     <div class="reviwer-title">
-                                        <span>27 Aug 2019</span>
-                                        <h6>Amada Lyly</h6>
+                                        <span>1 Aug 2021</span>
+                                        <h6>Dil Emma</h6>
                                     </div>
                                     <div class="reviwer-rating">
                                         <i class="fa fa-star"></i>
@@ -205,7 +194,7 @@ ob_start();
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam  modi tempora.</p>
+                                <p>Nagyszerű masszázs, szuper kaják. Izgalmas programok. Nagyszerű kilátás!!</p>
                             </div>
                         </div>
 
