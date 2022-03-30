@@ -64,37 +64,37 @@ ob_start();
                             <div id="room-thumbnail--slide" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="img/bg-img/48.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/kep3.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/49.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/kep6.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="img/bg-img/premiumIndex.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/51.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/kep4.jpg" class="d-block w-100" alt="">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/bg-img/52.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/masszazs.jpg" class="d-block w-100" alt="">
                                     </div>
                                 </div>
 
                                 <ol class="carousel-indicators">
                                     <li data-target="#room-thumbnail--slide" data-slide-to="0" class="active">
-                                        <img src="img/bg-img/48.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/kep3.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="1">
-                                        <img src="img/bg-img/49.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/kep6.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="2">
                                         <img src="img/bg-img/premiumIndex.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="3">
-                                        <img src="img/bg-img/51.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/kep4.jpg" class="d-block w-100" alt="">
                                     </li>
                                     <li data-target="#room-thumbnail--slide" data-slide-to="4">
-                                        <img src="img/bg-img/52.jpg" class="d-block w-100" alt="">
+                                        <img src="img/seasiderooms/masszazs.jpg" class="d-block w-100" alt="">
                                     </li>
                                 </ol>
                             </div>
@@ -127,7 +127,7 @@ ob_start();
 
                     <!-- Room Review -->
                     <div class="room-review-area mb-100">
-                        <h4>Room Review</h4>
+                        <h4>Értékelések</h4>
 
                         <!-- Single Review Area -->
                         <div class="single-room-review-area d-flex align-items-center">

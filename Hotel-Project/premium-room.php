@@ -130,7 +130,7 @@ ob_start();
 
                     <!-- Room Review -->
                     <div class="room-review-area mb-100">
-                        <h4>Room Review</h4>
+                        <h4>Értékelések</h4>
 
                         <!-- Single Review Area -->
                         <div class="single-room-review-area d-flex align-items-center">
