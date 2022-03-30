@@ -72,7 +72,7 @@ unset($_SESSION["children"]);
                     <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                         <!-- Room Thumbnail -->
                         <div class="room-thumbnail">
-                            <img src="img/seasiderooms/kep3.jpg" alt="">
+                            <img src="img\seasiderooms\kep3.jpg" alt="főkép">
                         </div>
 
                         <?php
@@ -157,7 +157,7 @@ unset($_SESSION["children"]);
                     <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
                         <!-- Room Thumbnail -->
                         <div class="room-thumbnail">
-                            <img src="img/bg-img/premiumIndex.jpg" alt="">
+                            <img src="img\premiumszoba\kep3.jpg" alt="">
                         </div>
                         <!-- Room Content -->
 
