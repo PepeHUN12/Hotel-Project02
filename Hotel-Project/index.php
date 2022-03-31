@@ -120,38 +120,28 @@ include "connection.php";
                                 <label for="checkOut">Kijelentkezés</label>
                                 <input type="date" class="form-control" id="checkOut" name="checkout-date">
                             </div>
-                            <div class="col-4 col-md-1">
-                                <label for="room">Szoba</label>
-                                <select name="room" id="room" class="form-control">
-                                    <option value="01">1</option>
-                                    <option value="02">2</option>
-                                    <option value="03">3</option>
-                                    <option value="04">4</option>
-                                    <option value="05">5</option>
-                                    <option value="06">6</option>
-                                </select>
-                            </div>
+
                             <div class="col-4 col-md-1">
                                 <label for="adults">Felnőtt</label>
                                 <select name="adults" id="adults" class="form-control">
-                                    <option value="01">1</option>
-                                    <option value="02">2</option>
-                                    <option value="03">3</option>
-                                    <option value="04">4</option>
-                                    <option value="05">5</option>
-                                    <option value="06">6</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
                                 </select>
                             </div>
                             <div class="col-4 col-md-2 col-lg-1">
                                 <label for="children">Gyermek</label>
                                 <select name="children" id="children" class="form-control">
-                                    <option value="00">-</option>
-                                    <option value="01">1</option>
-                                    <option value="02">2</option>
-                                    <option value="03">3</option>
-                                    <option value="04">4</option>
-                                    <option value="05">5</option>
-                                    <option value="06">6</option>
+                                    <option value="0">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
                                 </select>
                             </div>
                             <div class="col-12 col-md-3">
