@@ -116,13 +116,12 @@ ob_start();
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
                                     if($userlogin) {
-                                    $hiba = false;
-                                    $_SESSION["searoomid"] = $x;
-                                    echo '<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    break;
-                                    //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
-                                    //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    //}
+                                        if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
+                                        $hiba = false;
+                                        $_SESSION["searoomid"] = $x;
+                                        echo '<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                        break;
+                                        }
                                     }
                                     
                                 }
@@ -191,13 +190,12 @@ ob_start();
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
                                     if($userlogin) {
-                                    $hiba = false;
-                                    $_SESSION["familyroomid"] = $x;
-                                    echo '<a href="family-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    break;
-                                    //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
-                                    //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    //}
+                                        if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
+                                        $hiba = false;
+                                        $_SESSION["familyroomid"] = $x;
+                                        echo '<a href="family-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                        break;
+                                        }
                                     }
                                 }
                             }
@@ -259,13 +257,12 @@ ob_start();
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
                                     if($userlogin) {
-                                    $hiba = false;
-                                    $_SESSION["premiumroomid"] = $x;
-                                    echo '<a href="premium-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    break;
-                                    //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
-                                    //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    //}
+                                        if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
+                                        $hiba = false;
+                                        $_SESSION["premiumroomid"] = $x;
+                                        echo '<a href="premium-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                        break;
+                                        }
                                     }
                                 }
                             }
@@ -325,13 +322,12 @@ ob_start();
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
                                     if($userlogin) {
-                                    $hiba = false;
-                                    $_SESSION["coupleroomid"] = $x;
-                                    echo '<a href="couple-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    break;
-                                    //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
-                                    //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    //}
+                                        if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
+                                        $hiba = false;
+                                        $_SESSION["coupleroomid"] = $x;
+                                        echo '<a href="couple-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                        break;
+                                        }
                                     }
                                 }
                             }
@@ -391,13 +387,12 @@ ob_start();
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
                                     if($userlogin) {
-                                    $hiba = false;
-                                    $_SESSION["singleroomid"] = $x;
-                                    echo '<a href="single-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    break;
-                                    //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
-                                    //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                    //}
+                                        if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
+                                        $hiba = false;
+                                        $_SESSION["singleroomid"] = $x;
+                                        echo '<a href="single-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                        break;
+                                        }
                                     }
                                 }
                             }

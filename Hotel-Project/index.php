@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+ob_start();
 //unset($_SESSION["semail"]);
 ?>
 <!DOCTYPE html>
@@ -110,15 +111,15 @@ include "connection.php";
         <div class="hotel-search-form-area">
             <div class="container-fluid">
                 <div class="hotel-search-form">
-                    <form action="#" method="post">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="row justify-content-between align-items-end">
                             <div class="col-6 col-md-2 col-lg-3">
                                 <label for="checkIn">Bejelentkezés</label>
-                                <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                                <input type="date" class="form-control" id="checkInDate" name="fromdate">
                             </div>
                             <div class="col-6 col-md-2 col-lg-3">
                                 <label for="checkOut">Kijelentkezés</label>
-                                <input type="date" class="form-control" id="checkOut" name="checkout-date">
+                                <input type="date" class="form-control" id="checkOut" name="todate">
                             </div>
 
                             <div class="col-4 col-md-1">
@@ -152,6 +153,17 @@ include "connection.php";
                 </div>
             </div>
         </div>
+
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $_SESSION["fromdate"] = $_POST["fromdate"];
+                $_SESSION["todate"] = $_POST["todate"];
+                $_SESSION["adult"] = $_POST["adults"];
+                $_SESSION["children"] = $_POST["children"];
+
+                header("Location: http://localhost/Hotel-Project02/Hotel-Project/roomsearch.php");
+            }
+        ?>
 
         <div class="container mt-100">
             <div class="row align-items-center">
