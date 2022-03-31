@@ -299,24 +299,24 @@ unset($_SESSION["children"]);
                                 <div class="row">
                                     <div class="col-6 kozepre">
                                         <select name="adults" id="guests" class="form-control">
-                                            <option value="01">1</option>
-                                            <option value="02">2</option>
-                                            <option value="03">3</option>
-                                            <option value="04">4</option>
-                                            <option value="05">5</option>
-                                            <option value="06">6</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
                                         </select>
                                     </div>
                                     
                                     <div class="col-6 kozepre">
                                         <select name="children" id="children" class="form-control">
-                                            <option value="00">-</option>
-                                            <option value="01">1</option>
-                                            <option value="02">2</option>
-                                            <option value="03">3</option>
-                                            <option value="04">4</option>
-                                            <option value="05">5</option>
-                                            <option value="06">6</option>
+                                            <option value="0">-</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
                                         </select>
                                     </div>
                                 </div>
