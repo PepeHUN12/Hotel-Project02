@@ -287,12 +287,18 @@ unset($_SESSION["children"]);
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mb-30">
-                                <label for="guests">Vendégek</label>
+                            <div class="form-group mb-30" >
                                 <div class="row">
                                     <div class="col-6">
+                                    <label for="guests">Felnőtt</label>
+                                    </div>
+                                    <div class="col-6">
+                                    <label for="guests">Gyerek</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 kozepre">
                                         <select name="adults" id="guests" class="form-control">
-                                            <option value="adults">Felnőtt</option>
                                             <option value="01">1</option>
                                             <option value="02">2</option>
                                             <option value="03">3</option>
@@ -301,9 +307,9 @@ unset($_SESSION["children"]);
                                             <option value="06">6</option>
                                         </select>
                                     </div>
-                                    <div class="col-6">
+                                    
+                                    <div class="col-6 kozepre">
                                         <select name="children" id="children" class="form-control">
-                                            <option value="children">Gyermek</option>
                                             <option value="00">-</option>
                                             <option value="01">1</option>
                                             <option value="02">2</option>
@@ -316,7 +322,7 @@ unset($_SESSION["children"]);
                                 </div>
                             </div>
                             <div class="form-group mb-50">
-<!--                                <div class="slider-range">
+                                    <!--<div class="slider-range">
                                     <div class="range-price">Max ár: $0 - $550</div>
                                     <br>
                                     <div data-min="0" data-max="550" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="0" data-value-max="550" data-label-result="Max Price: ">
@@ -325,8 +331,7 @@ unset($_SESSION["children"]);
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                                     </div>
                                 </div>
-                            </div>
-                    -->
+                            </div>-->
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn roberto-btn w-100">Keresés</button>
