@@ -106,11 +106,16 @@ ob_start();
                             $todate = $_SESSION["todate"];
                             include "connection.php";
                             $hiba = true;
+                            if(empty($_SESSION["guestid"])) {
+                                $userlogin = false;
+                            }
+                            else {$userlogin = true;}
                             for ($x = 11; $x <= 15; $x++) {
                                 $sql = "SELECT * From reservations WHERE RoomID = " . $x . " AND '" . $fromdate . "' BETWEEN FromDate AND ToDate AND '" . $todate . "' BETWEEN FromDate AND ToDate";
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
+                                    if($userlogin) {
                                     $hiba = false;
                                     $_SESSION["searoomid"] = $x;
                                     echo '<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
@@ -118,10 +123,14 @@ ob_start();
                                     //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                     //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
                                     //}
-
+                                    }
+                                    
                                 }
                             }
-                            if ($hiba) {
+                            if(!$userlogin) {
+                                echo 'A foglaláshoz be kell jelentkezni';
+                            }
+                            else if ($hiba) {
                                 echo 'Nem elérhető';
                             }
                             $conn->close();
@@ -181,6 +190,7 @@ ob_start();
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
+                                    if($userlogin) {
                                     $hiba = false;
                                     $_SESSION["familyroomid"] = $x;
                                     echo '<a href="family-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
@@ -188,10 +198,13 @@ ob_start();
                                     //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                     //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
                                     //}
-
+                                    }
                                 }
                             }
-                            if ($hiba) {
+                            if(!$userlogin) {
+                                echo 'A foglaláshoz be kell jelentkezni';
+                            }
+                            else if ($hiba) {
                                 echo 'Nem elérhető';
                             }
                             $conn->close();
@@ -245,6 +258,7 @@ ob_start();
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
+                                    if($userlogin) {
                                     $hiba = false;
                                     $_SESSION["premiumroomid"] = $x;
                                     echo '<a href="premium-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
@@ -252,10 +266,13 @@ ob_start();
                                     //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                     //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
                                     //}
-
+                                    }
                                 }
                             }
-                            if ($hiba) {
+                            if(!$userlogin) {
+                                echo 'A foglaláshoz be kell jelentkezni';
+                            }
+                            else if ($hiba) {
                                 echo 'Nem elérhető';
                             }
                             $conn->close();
@@ -307,6 +324,7 @@ ob_start();
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
+                                    if($userlogin) {
                                     $hiba = false;
                                     $_SESSION["coupleroomid"] = $x;
                                     echo '<a href="couple-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
@@ -314,10 +332,13 @@ ob_start();
                                     //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                     //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
                                     //}
-
+                                    }
                                 }
                             }
-                            if ($hiba) {
+                            if(!$userlogin) {
+                                echo 'A foglaláshoz be kell jelentkezni';
+                            }
+                            else if ($hiba) {
                                 echo 'Nem elérhető';
                             }
                             $conn->close();
@@ -369,17 +390,21 @@ ob_start();
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
                                 if ($result->num_rows < 1) {
+                                    if($userlogin) {
                                     $hiba = false;
-                                    $_SESSION["coupleroomid"] = $x;
-                                    echo '<a href="couple-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+                                    $_SESSION["singleroomid"] = $x;
+                                    echo '<a href="single-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
                                     break;
                                     //if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                     //    echo'<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
                                     //}
-
+                                    }
                                 }
                             }
-                            if ($hiba) {
+                            if(!$userlogin) {
+                                echo 'A foglaláshoz be kell jelentkezni';
+                            }
+                            else if ($hiba) {
                                 echo 'Nem elérhető';
                             }
                             $conn->close();
