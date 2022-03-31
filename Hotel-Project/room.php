@@ -24,6 +24,8 @@ unset($_SESSION["children"]);
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!--Sajat Js-->
+    <script src="sajatjs.js" async></script>
 
 </head>
 
@@ -279,7 +281,7 @@ unset($_SESSION["children"]);
                                 <div>
                                     <div class="row no-gutters">
                                         <div class="col-6">
-                                            <input type="date" class="input-small form-control" id="checkInDate" name="fromdate" placeholder="Bejelentkezés">
+                                            <input type="date"  class="input-small form-control" id="checkInDate" name="fromdate" placeholder="Bejelentkezés">
                                         </div>
                                         <div class="col-6">
                                             <input type="date" class="input-small form-control" id="checkOut" name="todate" placeholder="Kijelentkezés">
@@ -287,7 +289,7 @@ unset($_SESSION["children"]);
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mb-30" >
+                            <div class="form-group mb-30 kozepre" >
                                 <div class="row">
                                     <div class="col-6">
                                     <label for="guests">Felnőtt</label>
@@ -297,7 +299,7 @@ unset($_SESSION["children"]);
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 kozepre">
+                                    <div class="col-6">
                                         <select name="adults" id="guests" class="form-control">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -308,7 +310,7 @@ unset($_SESSION["children"]);
                                         </select>
                                     </div>
                                     
-                                    <div class="col-6 kozepre">
+                                    <div class="col-6">
                                         <select name="children" id="children" class="form-control">
                                             <option value="0">-</option>
                                             <option value="1">1</option>
@@ -334,7 +336,7 @@ unset($_SESSION["children"]);
                             </div>-->
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn roberto-btn w-100">Keresés</button>
+                                <button type="submit" id='kereses' class="btn roberto-btn w-100">Keresés</button>
                             </div>
                         </form>
                     </div>
