@@ -1,5 +1,5 @@
 <!-- Header Area Start -->
-
+    <link rel="stylesheet" href="sajat.css">
     <header class="header-area">
        
         <!-- Top Header Area Start -->
@@ -24,13 +24,6 @@
                                 <span></span>
                             </div>
                                 <?php 
-                                    if (isset($_SESSION["semail"])) {
-                                        //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
-                                    }
-                                    else {
-                                        //echo "<script type='text/javascript'>alert('nemjó');</script>";
-                                    }
-                                    //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
                                             echo " <a class='nevkiir'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> 
@@ -45,7 +38,6 @@
                             
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -87,18 +79,33 @@
                                     <?php 
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
-                                            echo " 
-                                            <li><a class='nevkiir'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> </li>
-                                            <li><a href='logout.php'><span style='color:red;'>Kijelentkezés</span></a></li>";
+                                            echo '
+                                            <div class="hidden">
+                                                <li>
+                                                    <a class="nevkiir"><span> '.$_SESSION['slastname'].' '.$_SESSION['sfirstname'] .'</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="logout.php"><span style="color:red;">Kijelentkezés</span>
+                                                    </a>
+                                                </li>
+                                            </div> 
+                                            ';
                                         }
                                         else {
-                                            echo '<li><a name="log/reg" href="login.php"><span style="color:green;">Bejelentkezés</span></a></i> ';
+                                            echo '<div class="hidden">
+                                            <li>
+                                                <a name="log/reg" href="login.php">
+                                                    <span style="color:green;">Bejelentkezés</span>
+                                                </a>
+                                            </i> 
+                                            </div>';
                                         }
                                          
                                         $conn->close();
                                 ?>
                                 </ul>
-
+                                        
                                 
 
                                 <!-- Book Now -->
