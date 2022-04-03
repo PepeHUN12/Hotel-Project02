@@ -5,7 +5,7 @@ window.onload = function(){
     var checkOutDateButtonValue = checkOutDateButton.value
     var searchButton = document.getElementById('kereses')
     if(checkInDateButtonValue === '' && checkOutDateButtonValue === ''){
-        searchButton.style.visibility = 'hidden'
+        document.getElementById('kereses').disabled = true;
     }
     checkInDateButton.addEventListener('change', showSearch)
     checkOutDateButton.addEventListener('change', showSearch)

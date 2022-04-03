@@ -19,6 +19,7 @@ ob_start();
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sajat.css">
 
 </head>
 
@@ -238,7 +239,7 @@ ob_start();
                     if ($conn->query($sql) === TRUE) {
                         //echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
                         //exit();
-                        echo "Sikeres foglalás";
+                        echo '<h2 class="sikeres">Sikeres foglalás</h2>';
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                         // header('Location: ./hiba.php');

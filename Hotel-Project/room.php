@@ -336,7 +336,7 @@ unset($_SESSION["children"]);
                             </div>-->
                             </div>
                             <div class="form-group">
-                                <button type="submit" id='kereses' class="btn roberto-btn w-100">Keresés</button>
+                                <button name="completed"  type="submit" id='kereses' class="btn roberto-btn w-100">Keresés</button>
                             </div>
                         </form>
                     </div>
