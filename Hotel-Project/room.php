@@ -24,6 +24,7 @@ unset($_SESSION["children"]);
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sajat.css">
     <!--Sajat Js-->
     <script src="sajatjs.js" async></script>
 

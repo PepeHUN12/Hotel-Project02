@@ -2,6 +2,7 @@
 session_start();
 ob_start();
 ?>
+<link rel="stylesheet" href="sajat.css">
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -67,7 +68,7 @@ ob_start();
                     <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                         <!-- Room Thumbnail -->
                         <div class="room-thumbnail">
-                            <img src="img/bg-img/43.jpg" alt="">
+                            <img src="img\seasiderooms\kep3.jpg" alt="">
                         </div>
 
                         <?php
@@ -130,7 +131,7 @@ ob_start();
                                 echo 'A foglaláshoz be kell jelentkezni';
                             }
                             else if ($hiba) {
-                                echo 'Nem elérhető';
+                                echo '<h6 class="nemElerheto">Nem elérhető</h6>';
                             }
                             $conn->close();
                             ?>
@@ -203,7 +204,7 @@ ob_start();
                                 echo 'A foglaláshoz be kell jelentkezni';
                             }
                             else if ($hiba) {
-                                echo 'Nem elérhető';
+                                echo '<h6 class="nemElerheto">Nem elérhető</h6>';
                             }
                             $conn->close();
                             ?>
@@ -216,7 +217,7 @@ ob_start();
                     <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
                         <!-- Room Thumbnail -->
                         <div class="room-thumbnail">
-                            <img src="img/bg-img/premiumIndex.jpg" alt="">
+                            <img src="img\premiumszoba\kep3.jpg" alt="">
                         </div>
                         <!-- Room Content -->
 
@@ -270,7 +271,7 @@ ob_start();
                                 echo 'A foglaláshoz be kell jelentkezni';
                             }
                             else if ($hiba) {
-                                echo 'Nem elérhető';
+                                echo '<h6 class="nemElerheto">Nem elérhető</h6>';
                             }
                             $conn->close();
                             ?>
@@ -335,7 +336,7 @@ ob_start();
                                 echo 'A foglaláshoz be kell jelentkezni';
                             }
                             else if ($hiba) {
-                                echo 'Nem elérhető';
+                                echo '<h6 class="nemElerheto">Nem elérhető</h6>';
                             }
                             $conn->close();
                             ?>
@@ -400,7 +401,7 @@ ob_start();
                                 echo 'A foglaláshoz be kell jelentkezni';
                             }
                             else if ($hiba) {
-                                echo 'Nem elérhető';
+                                echo '<h6 class="nemElerheto">Nem elérhető</h6>';
                             }
                             $conn->close();
                             ?>
@@ -409,7 +410,10 @@ ob_start();
                 </div>
                 <div class="col-12 col-lg-4">
                     <?php 
-                        echo " Érkezés: ".$fromdate." <br>Távozás: ".$todate." ";
+                        echo '<div class="idopont">
+                        <h3 class="erkezes"> Érkezés: '.$fromdate.'</h3>
+                        <h3 class="tavozas">Távozás: '.$todate.'</h3>
+                        </div>';
                     ?>        
                     
                 </div>

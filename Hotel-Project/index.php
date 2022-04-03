@@ -21,6 +21,7 @@ ob_start();
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="sajatjs.js" async></script>
 
 </head>
 
@@ -146,7 +147,7 @@ include "connection.php";
                                 </select>
                             </div>
                             <div class="col-12 col-md-3">
-                                <button type="submit" class="form-control btn roberto-btn w-100">Keresés</button>
+                                <button type="submit" id='kereses' class="form-control btn roberto-btn w-100">Keresés</button>
                             </div>
                         </div>
                     </form>
