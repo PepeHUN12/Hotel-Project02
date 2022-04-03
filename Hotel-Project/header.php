@@ -33,11 +33,11 @@
                                     //echo "<script type='text/javascript'>alert('".$_SESSION["semail"]."');</script>";
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
-                                            echo " <a class='nevkiir'> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ." </a> 
-                                            <a href='logout.php'><span style='color:red;'>Kijelentkezés</span><i> ❌</i></a>";
+                                            echo " <a class='nevkiir'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> 
+                                            <a href='logout.php'><span style='color:red;'>Kijelentkezés</span></a>";
                                         }
                                         else {
-                                            echo ' <a name="log/reg" href="login.php"><span style="color:green;">Bejelentkezés</span><i> ✔️</i></a> ';
+                                            echo ' <a name="log/reg" href="login.php"><span style="color:green;">Bejelentkezés</span></a> ';
                                         }
                                          
                                         $conn->close();
@@ -83,6 +83,20 @@
                                     <li><a href="premium-room.php">Prémium szobák</a></li>
 
                                     <li><a href="./contact.php">Kapcsolat</a></li>
+                                    <br>
+                                    <?php 
+                                        include "connection.php";                                     
+                                        if (isset($_SESSION["semail"])) {
+                                            echo " 
+                                            <li><a class='nevkiir'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> </li>
+                                            <li><a href='logout.php'><span style='color:red;'>Kijelentkezés</span></a></li>";
+                                        }
+                                        else {
+                                            echo '<li><a name="log/reg" href="login.php"><span style="color:green;">Bejelentkezés</span></a></i> ';
+                                        }
+                                         
+                                        $conn->close();
+                                ?>
                                 </ul>
 
                                 
