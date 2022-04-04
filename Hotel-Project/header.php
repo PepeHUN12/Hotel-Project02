@@ -26,7 +26,7 @@
                                 <?php 
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
-                                            echo " <a class='nevkiir'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> 
+                                            echo " <a href='profiloldal.php'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> 
                                             <a href='logout.php'><span style='color:red;'>Kijelentkezés</span></a>";
                                         }
                                         else {

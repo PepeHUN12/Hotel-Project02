@@ -21,3 +21,28 @@
   .nemElerheto{
     color:red !important;
   }
+  
+  .sor{
+    border-style: solid;
+    border-width: thin;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0.5rem;
+    color: rgba(95, 88, 88, 0.527);
+  }
+
+  .col{
+    font-size: 15px;
+  }
+
+  .colketto{
+    font-size: 1.5rem;
+    margin-top: 8px;
+    
+  }
+  
+  .jobbra{
+    text-align: right !important;
+    
+  }
