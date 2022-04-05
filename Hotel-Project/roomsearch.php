@@ -112,20 +112,24 @@ ob_start();
                             }
                             else {$userlogin = true;}
                             for ($x = 11; $x <= 15; $x++) {
-                                $sql = "SELECT * From reservations WHERE RoomID = ".$x." AND '" . $fromdate . "' BETWEEN FromDate AND ToDate OR '" . $todate . "' BETWEEN FromDate AND ToDate";
+                                $sql = "SELECT * From reservations 
+                                WHERE RoomID = ".$x." 
+                                AND ('" . $fromdate . "' BETWEEN FromDate AND ToDate 
+                                OR '" . $todate . "' BETWEEN FromDate AND ToDate)";
+                                //echo " ".$sql." ";
                                 $result = $conn->query($sql);
-                                //echo "<script type='text/javascript'>alert('$result');</script>";
-                                if ($result->num_rows === 0) {
+                                if ($result->num_rows < 1) {
                                     if($userlogin) {
                                         if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                         $hiba = false;
                                         $_SESSION["searoomid"] = $x;
                                         echo '<a href="seaside-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                        $x = 999;
+                                        break;
                                         }
                                     }
                                     
                                 }
+                                //else {echo'NEMJÓÓ';}
                                 //$conn->refresh($conn);
                             }
                             if(!$userlogin) {
@@ -187,16 +191,19 @@ ob_start();
                             include "connection.php";
                             $hiba = true;
                             for ($x = 19; $x <= 28; $x++) {
-                                $sql = "SELECT * From reservations WHERE RoomID = " . $x . " AND '" . $fromdate . "' BETWEEN FromDate AND ToDate OR '" . $todate . "' BETWEEN FromDate AND ToDate";
+                                $sql = "SELECT * From reservations 
+                                WHERE RoomID = ".$x." 
+                                AND ('" . $fromdate . "' BETWEEN FromDate AND ToDate 
+                                OR '" . $todate . "' BETWEEN FromDate AND ToDate)";
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
-                                if ($result->num_rows === 1) {
+                                if ($result->num_rows === 0) {
                                     if($userlogin) {
                                         if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                         $hiba = false;
                                         $_SESSION["familyroomid"] = $x;
                                         echo '<a href="family-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                        $x = 999;
+                                        break;
                                         }
                                     }
                                 }
@@ -254,16 +261,19 @@ ob_start();
                             include "connection.php";
                             $hiba = true;
                             for ($x = 16; $x <= 18; $x++) {
-                                $sql = "SELECT * From reservations WHERE RoomID = " . $x . " AND '" . $fromdate . "' BETWEEN FromDate AND ToDate OR '" . $todate . "' BETWEEN FromDate AND ToDate";
+                                $sql = "SELECT * From reservations 
+                                WHERE RoomID = ".$x." 
+                                AND ('" . $fromdate . "' BETWEEN FromDate AND ToDate 
+                                OR '" . $todate . "' BETWEEN FromDate AND ToDate)";
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
-                                if ($result->num_rows === 1) {
+                                if ($result->num_rows === 0) {
                                     if($userlogin) {
                                         if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                         $hiba = false;
                                         $_SESSION["premiumroomid"] = $x;
                                         echo '<a href="premium-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                        $x = 999;
+                                        break;
                                         }
                                     }
                                 }
@@ -319,16 +329,19 @@ ob_start();
                             include "connection.php";
                             $hiba = true;
                             for ($x = 29; $x <= 38; $x++) {
-                                $sql = "SELECT * From reservations WHERE RoomID = " . $x . " AND '" . $fromdate . "' BETWEEN FromDate AND ToDate OR '" . $todate . "' BETWEEN FromDate AND ToDate";
+                                $sql = "SELECT * From reservations 
+                                WHERE RoomID = ".$x." 
+                                AND ('" . $fromdate . "' BETWEEN FromDate AND ToDate 
+                                OR '" . $todate . "' BETWEEN FromDate AND ToDate)";
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
-                                if ($result->num_rows === 1) {
+                                if ($result->num_rows === 0) {
                                     if($userlogin) {
                                         if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                         $hiba = false;
                                         $_SESSION["coupleroomid"] = $x;
                                         echo '<a href="couple-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                        $x = 999;
+                                        break;
                                         }
                                     }
                                 }
@@ -384,16 +397,19 @@ ob_start();
                             include "connection.php";
                             $hiba = true;
                             for ($x = 1; $x <= 10; $x++) {
-                                $sql = "SELECT * From reservations WHERE RoomID = " . $x . " AND '" . $fromdate . "' BETWEEN FromDate AND ToDate OR '" . $todate . "' BETWEEN FromDate AND ToDate";
+                                $sql = "SELECT * From reservations 
+                                WHERE RoomID = ".$x." 
+                                AND ('" . $fromdate . "' BETWEEN FromDate AND ToDate 
+                                OR '" . $todate . "' BETWEEN FromDate AND ToDate)";
                                 $result = $conn->query($sql);
                                 //echo "<script type='text/javascript'>alert('$result');</script>";
-                                if ($result->num_rows === 1) {
+                                if ($result->num_rows === 0) {
                                     if($userlogin) {
                                         if($_SESSION["adult"] <= $adult && $_SESSION["children"] <= $child) {
                                         $hiba = false;
                                         $_SESSION["singleroomid"] = $x;
                                         echo '<a href="single-room.php" class="btn view-detail-btn">Lefoglalás <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
-                                        $x = 999;
+                                        break;
                                         }
                                     }
                                 }
