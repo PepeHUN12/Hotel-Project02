@@ -82,7 +82,7 @@
                                             echo '
                                             <div class="hidden">
                                                 <li>
-                                                    <a class="nevkiir" href="profilOldal.php"><span> '.$_SESSION['slastname'].' '.$_SESSION['sfirstname'] .'</span> 
+                                                    <a class="nevkiir" href="profiloldal.php"><span> '.$_SESSION['slastname'].' '.$_SESSION['sfirstname'] .'</span> 
                                                     </a>
                                                 </li>
                                                 <li>
