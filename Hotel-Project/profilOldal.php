@@ -2,7 +2,6 @@
 // Start the session
 session_start();
 ob_start();
-//unset($_SESSION["semail"]);
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -64,12 +63,21 @@ include "connection.php";
                 include "connection.php";                                     
                 if (isset($_SESSION["semail"])) {
                     echo "<h6><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span></h6>";
+                    
+                    $sql = "SELECT PhoneNumber, Password FROM Guests WHERE GuestID = ".$_SESSION["guestid"]." ";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $pass = $row["Password"];
+                            $phone = $row["PhoneNumber"];
+                        }
+                    }
+
                 }
                 else {
                     echo ' <a name="log/reg" href="login.php"><span style="color:green;">Bejelentkezés</span></a> ';
                 }
-                    
-                $conn->close();
+                
                 ?>
             </div>
         </div>
@@ -78,7 +86,7 @@ include "connection.php";
                 <h4>Email: </h4>
             </div>
             <div class="col colketto">
-                <h6>email@asd.com</h6>
+                <?php echo"<h6>".$_SESSION["semail"]."</h6>"; ?>
             </div>
         </div>
         <div class="row sor">
@@ -86,7 +94,7 @@ include "connection.php";
                 <h4>Telefon szám: </h4>
             </div>
             <div class="col colketto">
-                <h6>Nulla6 hetven itt a BatMan</h6>
+                <?php echo"<h6>".$phone."</h6>" ?>
             </div>
         </div>
         <div class="row sor">
@@ -94,7 +102,7 @@ include "connection.php";
                 <h4>Jelszó: </h4>
             </div>
             <div class="col colketto">
-                <h6>LEGYEN KICSILLAOZVA!!!!</h6>
+                <?php echo"<h6>".$pass."     amugy ez javascript https://www.w3schools.com/howto/howto_js_toggle_password.asp </h6>" ?>
             </div>
         </div>
         <div class="row sor">
@@ -102,7 +110,16 @@ include "connection.php";
                 <h4>Foglalások: </h4>
             </div>
             <div class="col colketto">
-                <h6>TÓL- IG</h6>
+                <?php 
+                    $sql = "SELECT FromDate, ToDate, RoomName FROM Reservations WHERE GuestID = ".$_SESSION["guestid"]." ";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<h6> ".$row["FromDate"]." - ".$row["ToDate"]." --- ".$row["RoomName"]." </h6> <br>";
+                        }
+                    } 
+                    $conn->close();
+                ?>
             </div>
         </div>
     </div>
