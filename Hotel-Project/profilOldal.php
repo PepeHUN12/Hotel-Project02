@@ -102,7 +102,7 @@ include "connection.php";
                 <h4>Jelszó: </h4>
             </div>
             <div class="col colketto">
-                <?php echo"<h6>".$pass."     amugy ez javascript https://www.w3schools.com/howto/howto_js_toggle_password.asp </h6>" ?>
+                <?php echo'<h6>'.md5($pass).'</h6>' ?>
             </div>
         </div>
         <div class="row sor">
