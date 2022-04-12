@@ -35,6 +35,12 @@ ob_start();
     <!-- Header Area Start -->
     <?php 
     include "header.php";
+
+    $from = strtotime($_SESSION["fromdate"]);
+    $to = strtotime($_SESSION["todate"]);
+    $all = ($to - $from)* 100;
+    $all = round($all / (60 * 60 * 24));
+
     ?>
     <!-- Header Area End -->
 
@@ -45,7 +51,7 @@ ob_start();
                 <div class="col-12">
                     <div class="breadcrumb-content d-flex align-items-center justify-content-between pb-5">
                         <h2 class="room-title">Egy Személyes Szobák</h2>
-                        <h2 class="room-price">$100 <span>/Nap</span></h2>
+                        <h2 class="room-price"><?php echo " ".$all." $"; ?><span></span></h2>
                     </div>
                 </div>
             </div>
@@ -235,8 +241,7 @@ ob_start();
                     $roomid = $_SESSION["singleroomid"];
                     $roomname = "Páros szoba";
 
-                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID, RoomName) VALUES (" . $reservationid . ", " . $guestid . ", '" . $fromdate . "', '" . $todate . "', " . $roomid . ", '" . $roomname . "' )";
-
+                    $sql = "INSERT INTO Reservations (ReservationID, GuestID, FromDate, ToDate, RoomID, RoomName, Bill) VALUES (" . $reservationid . ", " . $guestid . ", '" . $fromdate . "', '" . $todate . "', " . $roomid . ", '" . $roomname . "', ".$all." )";
                     //            echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
                     if ($conn->query($sql) === TRUE) {
                         //echo " ".$reservationid." ".$guestid." ".$fromdate." ".$todate." ".$roomid." ";
