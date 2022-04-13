@@ -26,7 +26,7 @@
                                 <?php 
                                         include "connection.php";                                     
                                         if (isset($_SESSION["semail"])) {
-                                            echo " <a href='profiloldal.php'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> 
+                                            echo " <a href='profilOldal.php'><span> ".$_SESSION["slastname"]." ".$_SESSION["sfirstname"] ."</span> </a> 
                                             <a href='logout.php'><span style='color:red;'>Kijelentkezés</span></a>";
                                         }
                                         else {
@@ -82,7 +82,7 @@
                                             echo '
                                             <div class="hidden">
                                                 <li>
-                                                    <a class="nevkiir" href="profiloldal.php"><span> '.$_SESSION['slastname'].' '.$_SESSION['sfirstname'] .'</span> 
+                                                    <a class="nevkiir" href="profilOldal.php"><span> '.$_SESSION['slastname'].' '.$_SESSION['sfirstname'] .'</span> 
                                                     </a>
                                                 </li>
                                                 <li>
