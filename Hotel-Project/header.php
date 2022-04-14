@@ -72,7 +72,7 @@
                                     <li><a href="./about.php">Rólunk</a></li>
                                 <!--  <li><a href="./blog.php">hírek</a></li>-->
 
-                                    <li><a href="premium-room.php">Prémium szobák</a></li>
+                                    <li><a href="premiumoldal-menube.php">Prémium szobák</a></li>
 
                                     <li><a href="./contact.php">Kapcsolat</a></li>
                                     <br>
