@@ -48,7 +48,6 @@ ob_start();
                 <div class="col-12">
                     <div class="breadcrumb-content d-flex align-items-center justify-content-between pb-5">
                         <h2 class="room-title">Tengerre nyíló kilátás</h2>
-                        <h2 class="room-price"><?php echo " ".$all." $"; ?> <span></span></h2>
                     </div>
                 </div>
             </div>
