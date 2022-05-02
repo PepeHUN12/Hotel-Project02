@@ -1,0 +1,48 @@
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.exe.config
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.exe
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.pdb
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.AssemblyReference.cache
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Form1.resources
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Properties.Resources.resources
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.GenerateResource.cache
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.CoreCompileInputs.cache
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.exe
+E:\2. félév\Infó\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.pdb
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.exe.config
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.exe
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.pdb
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Form1.resources
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Properties.Resources.resources
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.GenerateResource.cache
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.exe
+C:\xampp\htdocs\Peti Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.pdb
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.exe.config
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.exe
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\Peti Projekt 2.pdb
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Form1.resources
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Properties.Resources.resources
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.GenerateResource.cache
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.exe
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.pdb
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\MySql.Data.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\MySql.Data.EntityFramework.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\Google.Protobuf.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\ZstdNet.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\BouncyCastle.Crypto.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\Ubiety.Dns.Core.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\System.Memory.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\System.Buffers.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\K4os.Compression.LZ4.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\K4os.Hash.xxHash.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\System.Numerics.Vectors.dll
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\bin\Debug\MySql.Data.EntityFramework.xml
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.exe.config
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Form2.resources
+C:\xampp\htdocs\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.CopyComplete
