@@ -18,8 +18,6 @@ namespace Peti_Projekt_2
             InitializeComponent();
         }
 
-
-
         private void btnEngForm_Click(object sender, EventArgs e) //Magyarról angolra
         {
             if (btnBill.Text == "Számla megtekintése")
@@ -141,10 +139,26 @@ namespace Peti_Projekt_2
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form formLogin = new Form2();
-            formLogin.Show();
-
+            //            var form2 = new Form2();
+            //            form2.Show();
+            try
+            {
+                using (var form2 = new Form2())
+                {
+                    var result = form2.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        lblGuest.Text = form2.returnValue;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                lblGuest.Text = "";
+                throw;
+            }
         }
+    }
     }
 
 
@@ -161,4 +175,4 @@ namespace Peti_Projekt_2
 
 
     
-}
+

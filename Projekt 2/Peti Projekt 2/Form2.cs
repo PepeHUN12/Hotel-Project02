@@ -25,30 +25,33 @@ namespace Peti_Projekt_2
 
         }
 
+        public string returnValue { get; set; }
         private void btnLogin2_Click(object sender, EventArgs e)
         {
             string email = textEmail.Text;
             string password = textPassword.Text;
             string sql = "SELECT GuestID, FirstName, LastName FROM Guests WHERE Email = '"+email+"' and Password = '"+password+"' LIMIT 1";
-
-
             using (var con = new MySqlConnection(cs))
             {
                 con.Open();
                 var cmd = new MySqlCommand(sql, con);
                 using (MySqlDataReader rdr = cmd.ExecuteReader()) {
-                    while (rdr.Read())
+                    if (rdr.HasRows)
                     {
-                        lblResult.Text = $"{rdr.GetString(1)}{rdr.GetString(2)}";
+                        while (rdr.Read())
+                        {
+                            this.returnValue = $"{rdr.GetString(1)} {rdr.GetString(2)}";
+                            this.DialogResult = DialogResult.OK;
+                            this.Close();
+                        }
                     }
-                    
+                    else
+                    {
+                        lblResult.Text = "Sikertelen Bejelentkezés";
+                    }
                 }
-                
 
-            
             }
-
-
         }
     }
 }
