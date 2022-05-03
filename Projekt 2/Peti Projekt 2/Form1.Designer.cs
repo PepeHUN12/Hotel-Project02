@@ -43,7 +43,7 @@ namespace Peti_Projekt_2
             this.btnHunForm = new System.Windows.Forms.Button();
             this.btnEngForm = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblGuest = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -159,14 +159,14 @@ namespace Peti_Projekt_2
             this.btnEngForm.UseVisualStyleBackColor = true;
             this.btnEngForm.Click += new System.EventHandler(this.btnEngForm_Click);
             // 
-            // label2
+            // lblGuest
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(177, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "(vendég e-mail címe)";
+            this.lblGuest.AutoSize = true;
+            this.lblGuest.Location = new System.Drawing.Point(177, 13);
+            this.lblGuest.Name = "lblGuest";
+            this.lblGuest.Size = new System.Drawing.Size(106, 13);
+            this.lblGuest.TabIndex = 12;
+            this.lblGuest.Text = "(vendég e-mail címe)";
             // 
             // label3
             // 
@@ -182,7 +182,7 @@ namespace Peti_Projekt_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(715, 524);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblGuest);
             this.Controls.Add(this.btnEngForm);
             this.Controls.Add(this.btnHunForm);
             this.Controls.Add(this.btnExit);
@@ -216,7 +216,7 @@ namespace Peti_Projekt_2
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnEngForm;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblGuest;
         private System.Windows.Forms.Button btnHunForm;
         private System.Windows.Forms.Label label3;
     }
