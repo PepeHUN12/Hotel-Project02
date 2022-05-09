@@ -26,6 +26,7 @@ namespace Peti_Projekt_2
         }
 
         public string returnValue { get; set; }
+        public int returnValueID { get; set; }
         private void btnLogin2_Click(object sender, EventArgs e)
         {
             string email = textEmail.Text;
@@ -40,7 +41,9 @@ namespace Peti_Projekt_2
                     {
                         while (rdr.Read())
                         {
+                            //lblResult.Text = $"{rdr.GetString(1)} {rdr.GetString(2)} {rdr.GetInt32(3)}";
                             this.returnValue = $"{rdr.GetString(1)} {rdr.GetString(2)}";
+                            this.returnValueID = rdr.GetInt32(0);
                             this.DialogResult = DialogResult.OK;
                             this.Close();
                         }

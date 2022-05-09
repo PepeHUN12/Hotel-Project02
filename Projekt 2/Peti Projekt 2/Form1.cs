@@ -13,6 +13,7 @@ namespace Peti_Projekt_2
 {
     public partial class Form1 : Form
     {
+        int guestID;
         public Form1()
         {
             InitializeComponent();
@@ -149,6 +150,7 @@ namespace Peti_Projekt_2
                     if (result == DialogResult.OK)
                     {
                         lblGuest.Text = form2.returnValue;
+                        guestID = form2.returnValueID;
                     }
                 }
             }
@@ -157,6 +159,19 @@ namespace Peti_Projekt_2
                 lblGuest.Text = "";
                 throw;
             }
+        }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            Form formBalance  = new Form3(guestID);
+            formBalance.Show();
+
+        }
+
+        private void btnRoomService_Click(object sender, EventArgs e)
+        {
+            Form formService = new Form4(guestID);
+            formService.Show();
         }
     }
     }

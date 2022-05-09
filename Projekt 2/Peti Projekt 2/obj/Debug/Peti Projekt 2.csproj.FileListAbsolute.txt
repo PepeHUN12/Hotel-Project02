@@ -73,3 +73,5 @@ C:\xampp\htdocs\Hotel-Project02\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 
 C:\xampp\htdocs\Hotel-Project02\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.csproj.CopyComplete
 C:\xampp\htdocs\Hotel-Project02\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.exe
 C:\xampp\htdocs\Hotel-Project02\Projekt 2\Peti Projekt 2\obj\Debug\Peti Projekt 2.pdb
+C:\xampp\htdocs\Hotel-Project02\Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Form3.resources
+C:\xampp\htdocs\Hotel-Project02\Projekt 2\Peti Projekt 2\obj\Debug\Peti_Projekt_2.Form4.resources
