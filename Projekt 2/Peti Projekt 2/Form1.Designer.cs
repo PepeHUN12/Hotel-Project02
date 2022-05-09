@@ -55,6 +55,7 @@ namespace Peti_Projekt_2
             this.btnBill.TabIndex = 0;
             this.btnBill.Text = "Számla megtekintése";
             this.btnBill.UseVisualStyleBackColor = true;
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnRoomService
             // 
@@ -64,6 +65,7 @@ namespace Peti_Projekt_2
             this.btnRoomService.TabIndex = 1;
             this.btnRoomService.Text = "Szobaszervíz";
             this.btnRoomService.UseVisualStyleBackColor = true;
+            this.btnRoomService.Click += new System.EventHandler(this.btnRoomService_Click);
             // 
             // btnDrinks
             // 
