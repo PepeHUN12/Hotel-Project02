@@ -17,6 +17,12 @@ namespace Peti_Projekt_2
         public Form1()
         {
             InitializeComponent();
+            DateTime dt = new DateTime();
+            dt = DateTime.Today.Date;
+
+            lblDate.Text = dt.ToString("yyyy/MM/dd");
+            
+            
         }
 
         private void btnEngForm_Click(object sender, EventArgs e) //Magyarról angolra
@@ -128,8 +134,16 @@ namespace Peti_Projekt_2
 
         private void btnDrinks_Click(object sender, EventArgs e) //Étel/Ital gomb következö formba lépése
         {
-            var drinksFood = new Form();
-            drinksFood.Show();
+            if (guestID == 0)
+            {
+                System.Windows.Forms.MessageBox.Show("Kérlek jelentkezz be");
+            }
+            else
+            {
+                var drinksFood = new Form();
+                drinksFood.Show();
+            }
+
         }
         private void Form_Load(object sender, EventArgs e)
         {
@@ -151,6 +165,8 @@ namespace Peti_Projekt_2
                     {
                         lblGuest.Text = form2.returnValue;
                         guestID = form2.returnValueID;
+                        btnLogout.Enabled = true;
+                        btnLogin.Enabled = false;
                     }
                 }
             }
@@ -163,8 +179,16 @@ namespace Peti_Projekt_2
 
         private void btnBill_Click(object sender, EventArgs e)
         {
-            Form formBalance  = new Form3(guestID);
-            formBalance.Show();
+            if (guestID == 0)
+            {
+                System.Windows.Forms.MessageBox.Show("Kérlek jelentkezz be");
+            }
+            else
+            {
+                Form formBalance = new Form3(guestID);
+                formBalance.Show();
+            }
+
 
         }
 
@@ -172,6 +196,19 @@ namespace Peti_Projekt_2
         {
             Form formService = new Form4(guestID);
             formService.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            guestID = 0;
+            lblGuest.Text = "";
+            btnLogout.Enabled = false;
+            btnLogin.Enabled = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
     }

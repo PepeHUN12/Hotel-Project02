@@ -45,6 +45,7 @@ namespace Peti_Projekt_2
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblGuest = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBill
@@ -63,46 +64,54 @@ namespace Peti_Projekt_2
             this.btnRoomService.Name = "btnRoomService";
             this.btnRoomService.Size = new System.Drawing.Size(103, 68);
             this.btnRoomService.TabIndex = 1;
-            this.btnRoomService.Text = "Szobaszervíz";
+            this.btnRoomService.Text = "Szobaszervíz / Rendelés";
             this.btnRoomService.UseVisualStyleBackColor = true;
             this.btnRoomService.Click += new System.EventHandler(this.btnRoomService_Click);
             // 
             // btnDrinks
             // 
+            this.btnDrinks.Enabled = false;
             this.btnDrinks.Location = new System.Drawing.Point(498, 119);
             this.btnDrinks.Name = "btnDrinks";
             this.btnDrinks.Size = new System.Drawing.Size(103, 68);
             this.btnDrinks.TabIndex = 2;
-            this.btnDrinks.Text = "Étel/Ital rendelés";
+            this.btnDrinks.Text = "ASD";
             this.btnDrinks.UseVisualStyleBackColor = true;
+            this.btnDrinks.Visible = false;
             this.btnDrinks.Click += new System.EventHandler(this.btnDrinks_Click);
             // 
             // btnActivities
             // 
+            this.btnActivities.Enabled = false;
             this.btnActivities.Location = new System.Drawing.Point(150, 279);
             this.btnActivities.Name = "btnActivities";
             this.btnActivities.Size = new System.Drawing.Size(103, 68);
             this.btnActivities.TabIndex = 3;
             this.btnActivities.Text = "Szabadidős tevékenységek";
             this.btnActivities.UseVisualStyleBackColor = true;
+            this.btnActivities.Visible = false;
             // 
             // btnCalendar
             // 
+            this.btnCalendar.Enabled = false;
             this.btnCalendar.Location = new System.Drawing.Point(328, 279);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Size = new System.Drawing.Size(103, 68);
             this.btnCalendar.TabIndex = 4;
             this.btnCalendar.Text = "Naptár";
             this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Visible = false;
             // 
             // btnWeather
             // 
+            this.btnWeather.Enabled = false;
             this.btnWeather.Location = new System.Drawing.Point(498, 279);
             this.btnWeather.Name = "btnWeather";
             this.btnWeather.Size = new System.Drawing.Size(103, 68);
             this.btnWeather.TabIndex = 5;
             this.btnWeather.Text = "Időjárás";
             this.btnWeather.UseVisualStyleBackColor = true;
+            this.btnWeather.Visible = false;
             // 
             // label1
             // 
@@ -125,21 +134,25 @@ namespace Peti_Projekt_2
             // 
             // btnLogout
             // 
+            this.btnLogout.Enabled = false;
             this.btnLogout.Location = new System.Drawing.Point(498, 489);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(90, 23);
             this.btnLogout.TabIndex = 8;
             this.btnLogout.Text = "Kijelentkezés";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnExit
             // 
+            this.btnExit.Enabled = false;
             this.btnExit.Location = new System.Drawing.Point(594, 489);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(90, 23);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Kilépés";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Visible = false;
             // 
             // btnHunForm
             // 
@@ -178,11 +191,20 @@ namespace Peti_Projekt_2
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 13;
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(13, 42);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(0, 13);
+            this.lblDate.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(715, 524);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblGuest);
             this.Controls.Add(this.btnEngForm);
@@ -199,6 +221,7 @@ namespace Peti_Projekt_2
             this.Controls.Add(this.btnBill);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,6 +244,7 @@ namespace Peti_Projekt_2
         private System.Windows.Forms.Label lblGuest;
         private System.Windows.Forms.Button btnHunForm;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDate;
     }
 }
 
