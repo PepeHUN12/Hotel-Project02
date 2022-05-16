@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Már 28. 16:52
+-- Létrehozás ideje: 2022. Máj 16. 13:30
 -- Kiszolgáló verziója: 10.4.22-MariaDB
 -- PHP verzió: 8.0.14
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `guests` (
-  `GuestID` int(11) NOT NULL,
+  `GuestID` int(32) NOT NULL,
   `FirstName` varchar(255) DEFAULT NULL,
   `LastName` varchar(255) DEFAULT NULL,
   `PhoneNumber` int(11) DEFAULT NULL,
@@ -53,57 +53,22 @@ INSERT INTO `guests` (`GuestID`, `FirstName`, `LastName`, `PhoneNumber`, `Email`
 --
 
 CREATE TABLE `reservations` (
-  `ReservationID` int(11) NOT NULL,
-  `GuestID` int(11) DEFAULT NULL,
+  `ReservationID` int(32) NOT NULL,
+  `GuestID` int(32) DEFAULT NULL,
   `FromDate` date DEFAULT NULL,
   `ToDate` date DEFAULT NULL,
-  `RoomID` int(11) DEFAULT NULL,
-  `RoomName` varchar(255) DEFAULT NULL
+  `RoomID` int(32) DEFAULT NULL,
+  `RoomName` varchar(255) DEFAULT NULL,
+  `Bill` int(32) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- A tábla adatainak kiíratása `reservations`
 --
 
-INSERT INTO `reservations` (`ReservationID`, `GuestID`, `FromDate`, `ToDate`, `RoomID`, `RoomName`) VALUES
-(1, 0, '2000-01-01', '2000-01-02', 1, 'Egyszemélyes szoba'),
-(2, 0, '2000-01-01', '2000-01-02', 2, 'Egyszemélyes szoba'),
-(3, 0, '2000-01-01', '2000-01-02', 3, 'Egyszemélyes szoba'),
-(4, 0, '2000-01-01', '2000-01-02', 4, 'Egyszemélyes szoba'),
-(5, 0, '2000-01-01', '2000-01-02', 5, 'Egyszemélyes szoba'),
-(6, 0, '2000-01-01', '2000-01-02', 6, 'Egyszemélyes szoba'),
-(7, 0, '2000-01-01', '2000-01-02', 7, 'Egyszemélyes szoba'),
-(8, 0, '2000-01-01', '2000-01-02', 8, 'Egyszemélyes szoba'),
-(9, 0, '2000-01-01', '2000-01-02', 9, 'Egyszemélyes szoba'),
-(10, 0, '2000-01-01', '2000-01-02', 10, 'Egyszemélyes szoba'),
-(11, 0, '2000-01-01', '2000-01-02', 11, 'Tenger oldali szoba'),
-(12, 0, '2000-01-01', '2000-01-02', 12, 'Tenger oldali szoba'),
-(13, 0, '2000-01-01', '2000-01-02', 13, 'Tenger oldali szoba'),
-(14, 0, '2000-01-01', '2000-01-02', 14, 'Tenger oldali szoba'),
-(15, 0, '2000-01-01', '2000-01-02', 15, 'Tenger oldali szoba'),
-(16, 0, '2000-01-01', '2000-01-02', 16, 'Prémium szoba'),
-(17, 0, '2000-01-01', '2000-01-02', 17, 'Prémium szoba'),
-(18, 0, '2000-01-01', '2000-01-02', 18, 'Prémium szoba'),
-(19, 0, '2000-01-01', '2000-01-02', 19, 'Családi szoba'),
-(20, 0, '2000-01-01', '2000-01-02', 20, 'Családi szoba'),
-(21, 0, '2000-01-01', '2000-01-02', 21, 'Családi szoba'),
-(22, 0, '2000-01-01', '2000-01-02', 22, 'Családi szoba'),
-(23, 0, '2000-01-01', '2000-01-02', 23, 'Családi szoba'),
-(24, 0, '2000-01-01', '2000-01-02', 24, 'Családi szoba'),
-(25, 0, '2000-01-01', '2000-01-02', 25, 'Családi szoba'),
-(26, 0, '2000-01-01', '2000-01-02', 26, 'Családi szoba'),
-(27, 0, '2000-01-01', '2000-01-02', 27, 'Családi szoba'),
-(28, 0, '2000-01-01', '2000-01-02', 28, 'Családi szoba'),
-(29, 0, '2000-01-01', '2000-01-02', 29, 'Kétszemélyes szoba'),
-(30, 0, '2000-01-01', '2000-01-02', 30, 'Kétszemélyes szoba'),
-(31, 0, '2000-01-01', '2000-01-02', 31, 'Kétszemélyes szoba'),
-(32, 0, '2000-01-01', '2000-01-02', 32, 'Kétszemélyes szoba'),
-(33, 0, '2000-01-01', '2000-01-02', 33, 'Kétszemélyes szoba'),
-(34, 0, '2000-01-01', '2000-01-02', 34, 'Kétszemélyes szoba'),
-(35, 0, '2000-01-01', '2000-01-02', 35, 'Kétszemélyes szoba'),
-(36, 0, '2000-01-01', '2000-01-02', 36, 'Kétszemélyes szoba'),
-(37, 0, '2000-01-01', '2000-01-02', 37, 'Kétszemélyes szoba'),
-(38, 0, '2000-01-01', '2000-01-02', 38, 'Kétszemélyes szoba');
+INSERT INTO `reservations` (`ReservationID`, `GuestID`, `FromDate`, `ToDate`, `RoomID`, `RoomName`, `Bill`) VALUES
+(390, 860, '2022-05-19', '2022-05-22', 11, 'Tenger oldali szoba', 1045),
+(729, 860, '2022-05-11', '2022-05-21', 19, 'Családi szoba', 3520);
 
 -- --------------------------------------------------------
 
